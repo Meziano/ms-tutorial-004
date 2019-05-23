@@ -16,11 +16,10 @@ The **config-service** is a usual **Spring Boot Application** with the extra dep
   <artifactId>spring-cloud-config-server</artifactId>
 </dependency>
 ```
-that adds an embedded *Config Server* to our application.
 Per default the *Config Server* manages a Github repository.
 To keep it simple we will use a filesystem repository. 
 ### The ConfigApplication
-The *ConfigApplication* must be annotated with @
+The *ConfigApplication* must be annotated with *@EnableConfigServer* to add an embedded *Config Server* to our application
 ```
 package de.meziane.ms;
 ...
@@ -35,7 +34,7 @@ public class ConfigApplication {
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjU1NDU3NCwzNjU1NjkxNjUsLTY3Nz
+eyJoaXN0b3J5IjpbLTY0MjEwNDExNSwzNjU1NjkxNjUsLTY3Nz
 M1OTg0MiwxNTI3MTc2NjE5LDE4ODcwNjM0MCwxOTIwMTE1MjU2
 XX0=
 -->
