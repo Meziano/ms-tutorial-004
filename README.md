@@ -8,10 +8,11 @@ The idea is to keep the configuration in a centralized and easy to access place,
 > place to manage external properties for applications across all environments.
 In this tutorial we will use a [Spring Cloud Config server](https://cloud.spring.io/spring-cloud-config/) to externally store variables our  application will need to run in all environments.
 So we will use our **employee-service** and **department-service** projects and add a **config-service** as an "infrastructure" microservice that manages configuration data of the other microservices.
-## the 
+## The config-service 
+The **config-service** is a usual 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNTc5NTcwMCwxNTI3MTc2NjE5LDE4OD
-cwNjM0MCwxOTIwMTE1MjU2XX0=
+eyJoaXN0b3J5IjpbLTE5MTg3MjUxMzQsMTUyNzE3NjYxOSwxOD
+g3MDYzNDAsMTkyMDExNTI1Nl19
 -->
