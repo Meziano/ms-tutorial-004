@@ -9,7 +9,7 @@ The idea is to keep the configuration in a centralized and easy to access place,
 In this tutorial we will use a [Spring Cloud Config server](https://cloud.spring.io/spring-cloud-config/) to externally store variables our  application will need to run in all environments.
 So we will use our **employee-service** and **department-service** projects and add a **config-service** as an "infrastructure" microservice that manages configuration data of the other microservices.
 ## The BOM for dependency management
-As we will use classes, interfaces, annotations and the like form the Sprin Cloud, we have to add the following *BOM*
+As we will use classes, interfaces, annotations and the like form the Spring Cloud in our child projects, we have to add the following *BOM* to the parent project.
 ```
 <dependencyManagement>
   <dependencies>
@@ -50,7 +50,7 @@ public class ConfigApplication {
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MjMwMDM4LDIwNzI3ODUyMzMsMjE3ND
-A0NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTks
-MTg4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNz
+QwNDc2NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5
+LDE4ODcwNjM0MCwxOTIwMTE1MjU2XX0=
 -->
