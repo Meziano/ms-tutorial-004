@@ -12,14 +12,14 @@ So we will use our **employee-service** and **department-service** projects and 
 The **config-service** is a usual **Spring Boot Application** with the extra dependency 
 ```
 <dependency>
-<groupId>org.springframework.cloud</groupId>
-<`artifactId``>spring-cloud-config-server</``artifactId``>`
-
-`</``dependency``>`
-
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-config-server</artifactId>
+</dependency>
 ```
+that adds an embedded *Config Server* to our application.
+
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgzOTkzNjQ0LDE1MjcxNzY2MTksMTg4Nz
-A2MzQwLDE5MjAxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4OD
+cwNjM0MCwxOTIwMTE1MjU2XX0=
 -->
