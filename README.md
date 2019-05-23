@@ -1,6 +1,6 @@
 # Microservices Tutorial-004
-## Let our microservices be independents
-### Introduction
+# Let our microservices be independents
+## Introduction
 In the last [tuturial-003](https://github.com/Meziano/tutorial-003) we have hardcoded the URL of the **employee-service** in the **department-service** and this is not very wise: What if the used port changes? What if we have 10 or more microservices that need to communicate with each other and that must have at least differents server-port on different environments like development, test and production?
 It's abvious that it makes no sense it make sense to have to manually update each and every one of these services. 
 The idea is to keep the configuration in a centralized and easy to access place, so that each microservice can load its own configuration and refresh it automatically to reflect any changes without restarting the JVM.
@@ -8,10 +8,10 @@ The idea is to keep the configuration in a centralized and easy to access place,
 > place to manage external properties for applications across all environments.
 In this tutorial we will use a [Spring Cloud Config server](https://cloud.spring.io/spring-cloud-config/) to externally store variables our  application will need to run in all environments.
 So we will use our **employee-service** and **department-service** projects and add a **config-service** as an "infrastructure" microservice that manages configuration data of the other microservices.
-
+## the 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNzE3NjYxOSwxODg3MDYzNDAsMTkyMD
-ExNTI1Nl19
+eyJoaXN0b3J5IjpbLTIyNTc5NTcwMCwxNTI3MTc2NjE5LDE4OD
+cwNjM0MCwxOTIwMTE1MjU2XX0=
 -->
