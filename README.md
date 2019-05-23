@@ -17,9 +17,10 @@ The **config-service** is a usual **Spring Boot Application** with the extra dep
 </dependency>
 ```
 that adds an embedded *Config Server* to our application.
+Per default the *Config Server* 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4OD
-cwNjM0MCwxOTIwMTE1MjU2XX0=
+eyJoaXN0b3J5IjpbMTI0NzgxMTE4MiwtNjc3MzU5ODQyLDE1Mj
+cxNzY2MTksMTg4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
 -->
