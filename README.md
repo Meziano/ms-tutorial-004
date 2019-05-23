@@ -17,10 +17,10 @@ The **config-service** is a usual **Spring Boot Application** with the extra dep
 </dependency>
 ```
 that adds an embedded *Config Server* to our application.
-Per default the *Config Server* 
+Per default the *Config Server* manages a Github repository, as we will use a  
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NzgxMTE4MiwtNjc3MzU5ODQyLDE1Mj
-cxNzY2MTksMTg4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbLTE2MDExOTE1MTYsLTY3NzM1OTg0MiwxNT
+I3MTc2NjE5LDE4ODcwNjM0MCwxOTIwMTE1MjU2XX0=
 -->
