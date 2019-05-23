@@ -46,13 +46,16 @@ public class ConfigApplication {
   }
 }
 ```
+### The configuration file
+As a **config-service** is a usual **Spring Boot Application**
 ### The filesystem repository
 
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNz
-I3ODUyMzMsMjE3NDA0NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQy
-LDE1MjcxNzY2MTksMTg4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbMTc4OTU5NTgxOSwyMDMwOTQyNjY4LDIxMz
+QyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5MTY1
+LC02NzczNTk4NDIsMTUyNzE3NjYxOSwxODg3MDYzNDAsMTkyMD
+ExNTI1Nl19
 -->
