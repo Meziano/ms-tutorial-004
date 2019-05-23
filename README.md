@@ -20,11 +20,22 @@ that adds an embedded *Config Server* to our application.
 Per default the *Config Server* manages a Github repository.
 To keep it simple we will use a filesystem repository. 
 ### The ConfigApplication
-
+The *ConfigApplication* must be annotated with @
+```
+package de.meziane.ms;
+...
+@EnableConfigServer
+@SpringBootApplication
+public class ConfigApplication {
+  public static void main( String[] args ) {
+    SpringApplication.run(ConfigApplication.class, args);    	
+  }
+}
+```
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk0OTExODIwLDM2NTU2OTE2NSwtNjc3Mz
-U5ODQyLDE1MjcxNzY2MTksMTg4NzA2MzQwLDE5MjAxMTUyNTZd
-fQ==
+eyJoaXN0b3J5IjpbLTMxNjU1NDU3NCwzNjU1NjkxNjUsLTY3Nz
+M1OTg0MiwxNTI3MTc2NjE5LDE4ODcwNjM0MCwxOTIwMTE1MjU2
+XX0=
 -->
