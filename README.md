@@ -6,10 +6,10 @@ It's abvious that it makes no sense it make sense to have to manually update eac
 The idea is to keep the configuration in a centralized and easy to access place, so that each microservice can load its own configuration and refresh it automatically to reflect any changes without restarting the JVM.
 > A Spring Cloud Server provides server and client-side support for externalized configuration in a distributed system. With the Config Server you have a central
 > place to manage external properties for applications across all environments.
-W
+In this tutorial we will use a
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTM5NTQzNDQsMTg4NzA2MzQwLDE5Mj
-AxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbLTYwNTg1OTY1NCwxODg3MDYzNDAsMTkyMD
+ExNTI1Nl19
 -->
