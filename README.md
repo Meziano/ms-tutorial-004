@@ -47,15 +47,15 @@ public class ConfigApplication {
 }
 ```
 ### The configuration file
-As a **config-service** is a usual **Spring Boot Application**
+As for any other **Spring Boot Application** we can use a configuration file to set the values of the properties  **config-service** 
 ### The filesystem repository
 
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4OTU5NTgxOSwyMDMwOTQyNjY4LDIxMz
-QyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5MTY1
-LC02NzczNTk4NDIsMTUyNzE3NjYxOSwxODg3MDYzNDAsMTkyMD
-ExNTI1Nl19
+eyJoaXN0b3J5IjpbMzU0NzM5MTg3LDIwMzA5NDI2NjgsMjEzND
+I1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2NywzNjU1NjkxNjUs
+LTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4ODcwNjM0MCwxOTIwMT
+E1MjU2XX0=
 -->
