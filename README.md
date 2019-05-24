@@ -90,14 +90,11 @@ message: Hello microservices world!
  If we request again  http://localhost:8888/employee-service/dev we get:
  ![Config Data from local repository for employee-service for dev profile after refresh](images/LiveRefreshOfConfigDataForEmployeeserviceDev.png?raw=true)
 
-
-
-
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MjU5MDI5MywxODg3Mzk5MzgzLDY3Nz
-U3ODc1OSwtMTg5NjI1MzYzLDE5MDM5MDgyODcsMTAwNTg1Mjc2
-MSwyMDMwOTQyNjY4LDIxMzQyNTM3ODEsMjA3Mjc4NTIzMywyMT
-c0MDQ3NjcsMzY1NTY5MTY1LC02NzczNTk4NDIsMTUyNzE3NjYx
-OSwxODg3MDYzNDAsMTkyMDExNTI1Nl19
+eyJoaXN0b3J5IjpbLTk0OTE2MzE0NywtOTYyNTkwMjkzLDE4OD
+czOTkzODMsNjc3NTc4NzU5LC0xODk2MjUzNjMsMTkwMzkwODI4
+NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMjEzNDI1Mzc4MSwyMD
+cyNzg1MjMzLDIxNzQwNDc2NywzNjU1NjkxNjUsLTY3NzM1OTg0
+MiwxNTI3MTc2NjE5LDE4ODcwNjM0MCwxOTIwMTE1MjU2XX0=
 -->
