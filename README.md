@@ -58,7 +58,9 @@ spring.profiles.active=native
  + *server.port*: to get access to the configuration data saved in the repository amnaged by **config-service**, a microservice need this value. 
  + *spring.profiles.active*: its value must be set to *native* to tell **config-service** to use a file system repository. Per default **Spring Cloud Config Server** searches for files stored in the following locations, *classpath:/, classpath:/config, file:./, file:./config*. If we want to use another location on our computer we can use *spring.cloud.config.server.native.searchLocations*.    
 ### The file system repository
-Now we need to add configuration data for the  **employee-service** and **department-service** to the file system repository. To let things simple we add a *config* folder under *src/main/resources*. Furthermore we add the following configurationfiles:
+Now we need to add configuration data for the  **employee-service** and **department-service** to the file system repository. To let things simple we add a *config* folder under *src/main/resources*. 
+
+Furthermore we add the following configurationfiles:
 + department-service-dev.properties
 + department-service-prod.properties
 + employee-service-dev.properties
@@ -92,14 +94,14 @@ message: Hello microservices world!
 
 ## The department-service and the employee-service
 We need now to make our microservices pick up their respective configuration data from the **config-service**.
- 
+We will use exactly the same  
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzYyOTQwNTAsLTk0OTE2MzE0NywtOT
-YyNTkwMjkzLDE4ODczOTkzODMsNjc3NTc4NzU5LC0xODk2MjUz
-NjMsMTkwMzkwODI4NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMj
-EzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2NywzNjU1Njkx
-NjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4ODcwNjM0MCwxOT
-IwMTE1MjU2XX0=
+eyJoaXN0b3J5IjpbMzYwODAzNTU4LC05NDkxNjMxNDcsLTk2Mj
+U5MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1MzYz
+LDE5MDM5MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMz
+QyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5MTY1
+LC02NzczNTk4NDIsMTUyNzE3NjYxOSwxODg3MDYzNDAsMTkyMD
+ExNTI1Nl19
 -->
