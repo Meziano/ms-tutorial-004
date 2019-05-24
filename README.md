@@ -77,7 +77,7 @@ server.port: 8081
 # employee--service-prod.properties
 server.port: 9081
 ```
-If we start the  **config-service** and request http://localhost:8888/employee-service/dev we get 
+If we start the  **config-service** and request http://localhost:8888/employee-service/dev we get ![Config ](images/ConfigDataForEmployeeserviceDev.png?raw=true)
  
  Requisting http://localhost:8888/employee-service/prod shows 
  
@@ -86,9 +86,9 @@ If we start the  **config-service** and request http://localhost:8888/employee-s
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OT
-YyNTM2MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2
-OCwyMTM0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NT
-U2OTE2NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTksMTg4NzA2MzQw
-LDE5MjAxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbLTIwMDY1MjY2MzAsMTg4NzM5OTM4Myw2Nz
+c1Nzg3NTksLTE4OTYyNTM2MywxOTAzOTA4Mjg3LDEwMDU4NTI3
+NjEsMjAzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUyMzMsMj
+E3NDA0NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1MjcxNzY2
+MTksMTg4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
 -->
