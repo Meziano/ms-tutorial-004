@@ -53,8 +53,8 @@ server.port=8888
 spring.application.name=config-service
 spring.profiles.active=native
 ```
- For now the 2 important  configuration's properties for the **config-service** are:
- + *server.port*: 
+ For now the 2 important  configuration's properties for **config-service** are:
+ + *server.port*: to get acces to the configuration data saved in the repository amnaged by **config-service**, a 
  + *spring.profiles.active*:  The *application-name* 
 ### The filesystem repository
 
@@ -62,7 +62,7 @@ spring.profiles.active=native
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5OTcxMDkyNSwxMDA1ODUyNzYxLDIwMz
+eyJoaXN0b3J5IjpbLTEwNzAyNjc3MiwxMDA1ODUyNzYxLDIwMz
 A5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2
 NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4OD
 cwNjM0MCwxOTIwMTE1MjU2XX0=
