@@ -90,14 +90,15 @@ message: Hello microservices world!
  If we request again  http://localhost:8888/employee-service/dev we get:
  ![Config Data from local repository for employee-service for dev profile after refresh](images/LiveRefreshOfConfigDataForEmployeeserviceDev.png?raw=true)
 
-
+## The department-service and the employee-service
+We need now to make our microservices pick their respective configuration data fro the **config-service** 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMzE0NjI2NSwtOTQ5MTYzMTQ3LC05Nj
-I1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2
-MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMT
-M0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2OTE2
-NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTksMTg4NzA2MzQwLDE5Mj
-AxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbLTEzMzczNjgwNDAsLTk0OTE2MzE0NywtOT
+YyNTkwMjkzLDE4ODczOTkzODMsNjc3NTc4NzU5LC0xODk2MjUz
+NjMsMTkwMzkwODI4NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMj
+EzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2NywzNjU1Njkx
+NjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4ODcwNjM0MCwxOT
+IwMTE1MjU2XX0=
 -->
