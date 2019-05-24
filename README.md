@@ -6,6 +6,7 @@ It's abvious that it makes no sense it make sense to have to manually update eac
 The idea is to keep the configuration in a centralized and easy to access place, so that each microservice can load its own configuration and refresh it automatically to reflect any changes without restarting the JVM.
 > A Spring Cloud Server provides server and client-side support for externalized configuration in a distributed system. With the Config Server you have a central
 > place to manage external properties for applications across all environments.
+
 In this tutorial we will use a [Spring Cloud Config server](https://cloud.spring.io/spring-cloud-config/) to externally store variables our  application will need to run in all environments.
 So we will use our **employee-service** and **department-service** projects and add a **config-service** as an "infrastructure" microservice that manages configuration data of the other microservices.
 ## The BOM for dependency management
@@ -68,8 +69,8 @@ Now we need to add configuration data for the  **employee-service** and **depart
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMzkwODI4NywxMDA1ODUyNzYxLDIwMz
-A5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2
-NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4OD
-cwNjM0MCwxOTIwMTE1MjU2XX0=
+eyJoaXN0b3J5IjpbLTE4OTYyNTM2MywxOTAzOTA4Mjg3LDEwMD
+U4NTI3NjEsMjAzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUy
+MzMsMjE3NDA0NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1Mj
+cxNzY2MTksMTg4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
 -->
