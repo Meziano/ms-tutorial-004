@@ -106,11 +106,13 @@ We will use exactly the same **department-service** and **employee-service** as 
 ### The configuration files
 We just remove the configuration files of the 2 applications as they must now pick up their respective configuration data from the **config-service**.
 To tell our microservice about the new situation we must make them aware about central configuration and to this end we add the following dependency to each of them:
-``````    
+```
+
+```    
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NTgxOTI2NSwtOTQ5MTYzMTQ3LC05Nj
+eyJoaXN0b3J5IjpbLTM3NTY1OTY4MywtOTQ5MTYzMTQ3LC05Nj
 I1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2
 MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMT
 M0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2OTE2
