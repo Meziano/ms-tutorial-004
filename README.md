@@ -96,7 +96,8 @@ Let's add the following property to the *employee-service.properties* and save t
 message: Hello microservices world!
 ```
  If we request again  http://localhost:8888/employee-service/dev we get:
- 
+
+
  ![Config Data from local repository for employee-service for dev profile after refresh](images/LiveRefreshOfConfigDataForEmployeeserviceDev.png?raw=true)
 
 ## The department-service and the employee-service
@@ -105,10 +106,10 @@ We will use exactly the same
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDAzOTU3NSwtOTQ5MTYzMTQ3LC05Nj
-I1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2
-MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMT
-M0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2OTE2
-NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTksMTg4NzA2MzQwLDE5Mj
-AxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbNTI1MzA0Nzc3LC05NDkxNjMxNDcsLTk2Mj
+U5MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1MzYz
+LDE5MDM5MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMz
+QyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5MTY1
+LC02NzczNTk4NDIsMTUyNzE3NjYxOSwxODg3MDYzNDAsMTkyMD
+ExNTI1Nl19
 -->
