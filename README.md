@@ -55,15 +55,16 @@ spring.profiles.active=native
 ```
  For now the 2 important  configuration's properties for **config-service** are:
  + *server.port*: to get access to the configuration data saved in the repository amnaged by **config-service**, a microservice need this value. 
- + *spring.profiles.active*: its value must be set to *native* to tell **config-service** to use a filesystem repository. Per default **Spring Cloud Config Server** searches for files stored in the following locations, *classpath:/, classpath:/config, file:./, file:./config 
+ + *spring.profiles.active*: its value must be set to *native* to tell **config-service** to use a filesystem repository. Per default **Spring Cloud Config Server** searches for files stored in the following locations, *classpath:/, classpath:/config, file:./, file:./config*. If we want to use another location on our computer 
+   
 ### The filesystem repository
 
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNzYzMTY5MiwxMDA1ODUyNzYxLDIwMz
-A5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2
-NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4OD
-cwNjM0MCwxOTIwMTE1MjU2XX0=
+eyJoaXN0b3J5IjpbNzMzMTMyOTcxLDEwMDU4NTI3NjEsMjAzMD
+k0MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3
+LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTksMTg4Nz
+A2MzQwLDE5MjAxMTUyNTZdfQ==
 -->
