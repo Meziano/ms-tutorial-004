@@ -86,7 +86,9 @@ server.port: 9081
 If we start the  **config-service** and request http://localhost:8888/employee-service/dev we get:
  ![Config Data from local repository for employee-service for dev profile](images/ConfigDataForEmployeeserviceDev.png?raw=true)
  
- If we requrst http://localhost:8888/employee-service/prod we get:  
+
+ If we request http://localhost:8888/employee-service/prod we get:  
+
  ![Config Data from local repository for employee-service for prod profile](images/ConfigDataForEmployeeserviceProd.png?raw=true)
 
 Let's add the following property to the *employee-service.properties* and save the file :
@@ -102,7 +104,7 @@ We will use exactly the same
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNDU2NzA2OCwtOTQ5MTYzMTQ3LC05Nj
+eyJoaXN0b3J5IjpbMTA0MDgwNDY0NSwtOTQ5MTYzMTQ3LC05Nj
 I1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2
 MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMT
 M0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2OTE2
