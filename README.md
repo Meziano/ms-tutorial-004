@@ -63,14 +63,15 @@ Now we need to add configuration data for the  **employee-service** and **depart
 + department-service-prod.properties
 + employee-service-dev.properties
 + employee-service-prod.properties
-
+For now the content of these files is in the following 
  
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTYyNTM2MywxOTAzOTA4Mjg3LDEwMD
-U4NTI3NjEsMjAzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUy
-MzMsMjE3NDA0NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1Mj
-cxNzY2MTksMTg4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbMjEyMjE3NTIzNCwtMTg5NjI1MzYzLDE5MD
+M5MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMzQyNTM3
+ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5MTY1LC02Nz
+czNTk4NDIsMTUyNzE3NjYxOSwxODg3MDYzNDAsMTkyMDExNTI1
+Nl19
 -->
