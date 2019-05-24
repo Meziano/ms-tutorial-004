@@ -77,7 +77,7 @@ server.port: 8081
 # employee--service-prod.properties
 server.port: 9081
 ```
-If we start the  **config-service** and request:
+If we start the  **config-service** and request http://localhost:8888/employee-service/dev 
  
 .is in the following 
  
@@ -85,9 +85,9 @@ If we start the  **config-service** and request:
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3NTc4NzU5LC0xODk2MjUzNjMsMTkwMz
-kwODI4NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMjEzNDI1Mzc4
-MSwyMDcyNzg1MjMzLDIxNzQwNDc2NywzNjU1NjkxNjUsLTY3Nz
-M1OTg0MiwxNTI3MTc2NjE5LDE4ODcwNjM0MCwxOTIwMTE1MjU2
-XX0=
+eyJoaXN0b3J5IjpbMTg3MDI1ODA3Myw2Nzc1Nzg3NTksLTE4OT
+YyNTM2MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2
+OCwyMTM0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NT
+U2OTE2NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTksMTg4NzA2MzQw
+LDE5MjAxMTUyNTZdfQ==
 -->
