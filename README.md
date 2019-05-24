@@ -47,7 +47,7 @@ public class ConfigApplication {
 }
 ```
 ### The configuration file
-As for any other **Spring Boot Application** we  use a configuration file to set the values of the properties other than the default for **config-service**.  
+As for any other **Spring Boot Application** we  use a configuration file to set the values of the properties other than the default for **config-service**.  For now the 2 important  configuration's properties for the **config-service** are the **serv The *application-name* 
 ```
 server.port=8888
 spring.application.name=config-service
@@ -60,8 +60,8 @@ spring.profiles.active=native
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MTUzMTgxNCwxMDA1ODUyNzYxLDIwMz
-A5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2
-NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4OD
-cwNjM0MCwxOTIwMTE1MjU2XX0=
+eyJoaXN0b3J5IjpbLTEyMTM5MDAxMjUsMTAwNTg1Mjc2MSwyMD
+MwOTQyNjY4LDIxMzQyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3
+NjcsMzY1NTY5MTY1LC02NzczNTk4NDIsMTUyNzE3NjYxOSwxOD
+g3MDYzNDAsMTkyMDExNTI1Nl19
 -->
