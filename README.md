@@ -67,21 +67,25 @@ For now these files containt just the port number for the related microservice:
 ```
 # department-service-dev.properties
 server.port: 8082
-#department-service-prod.properties
+
+# department-service-prod.properties
 server.port: 9082
 
 # employee-service-dev.properties
 server.port: 8081
+
+# employee--service-prod.properties
 server.port: 9081
 ```
-
+If we start the  **config-service** and request:
+ 
 .is in the following 
  
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY1MDM5OTQ2LC0xODk2MjUzNjMsMTkwMz
+eyJoaXN0b3J5IjpbNjc3NTc4NzU5LC0xODk2MjUzNjMsMTkwMz
 kwODI4NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMjEzNDI1Mzc4
 MSwyMDcyNzg1MjMzLDIxNzQwNDc2NywzNjU1NjkxNjUsLTY3Nz
 M1OTg0MiwxNTI3MTc2NjE5LDE4ODcwNjM0MCwxOTIwMTE1MjU2
