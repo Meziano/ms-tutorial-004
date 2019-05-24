@@ -103,11 +103,12 @@ message: Hello microservices world!
 ## The department-service and the employee-service
 We need now to make our microservices pick up their respective configuration data from the **config-service**.
 We will use exactly the same **department-service** and **employee-service** as in the [last tutorial](https://github.com/Meziano/tutorial-003).
-### The configuration files  
+### The configuration files
+We just remove the configuration files of the 2 applications as they must now pick up their respective configuration data from the local re   
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYzMDA4ODAwLC05NDkxNjMxNDcsLTk2Mj
+eyJoaXN0b3J5IjpbOTAzODU0MTYzLC05NDkxNjMxNDcsLTk2Mj
 U5MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1MzYz
 LDE5MDM5MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMz
 QyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5MTY1
