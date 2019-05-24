@@ -34,7 +34,7 @@ The **config-service** is a usual **Spring Boot Application** with the extra dep
 Per default the *Config Server* manages a Github repository.
 To keep it simple we will use a filesystem repository. 
 ### The ConfigApplication
-The *ConfigApplication* must be annotated with *@EnableConfigServer* to add an embedded *Config Server* to our application
+The *ConfigApplication* must be annotated with *@EnableConfigServer* to add an embedded **Config Server** to our application
 ```
 package de.meziane.ms;
 ...
@@ -47,15 +47,21 @@ public class ConfigApplication {
 }
 ```
 ### The configuration file
-As for any other **Spring Boot Application** we can use a configuration file to set the values of the properties other than the default for **config-service**.  
+As for any other **Spring Boot Application** we  use a configuration file to set the values of the properties other than the default for **config-service**.  
+```
+server.port=8888
+spring.application.name=config-service
+spring.profiles.active=native
+
+```
 ### The filesystem repository
 
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMz
-QyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5MTY1
-LC02NzczNTk4NDIsMTUyNzE3NjYxOSwxODg3MDYzNDAsMTkyMD
-ExNTI1Nl19
+eyJoaXN0b3J5IjpbLTQ4MTUzMTgxNCwxMDA1ODUyNzYxLDIwMz
+A5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2
+NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4OD
+cwNjM0MCwxOTIwMTE1MjU2XX0=
 -->
