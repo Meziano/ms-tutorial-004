@@ -55,15 +55,15 @@ spring.profiles.active=native
 ```
  For now the 2 important  configuration's properties for **config-service** are:
  + *server.port*: to get access to the configuration data saved in the repository amnaged by **config-service**, a microservice need this value. 
- + *spring.profiles.active*: its value must be set to natto tell **config-service** to use a filesystem repository  setting   The *application-name* 
+ + *spring.profiles.active*: its value must be set to *native* to tell **config-service** to use a filesystem repository. Per default  
 ### The filesystem repository
 
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDQ3NDEwOCwxMDA1ODUyNzYxLDIwMz
-A5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2
-NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4OD
-cwNjM0MCwxOTIwMTE1MjU2XX0=
+eyJoaXN0b3J5IjpbLTE2MDkyMTQyNjksMTAwNTg1Mjc2MSwyMD
+MwOTQyNjY4LDIxMzQyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3
+NjcsMzY1NTY5MTY1LC02NzczNTk4NDIsMTUyNzE3NjYxOSwxOD
+g3MDYzNDAsMTkyMDExNTI1Nl19
 -->
