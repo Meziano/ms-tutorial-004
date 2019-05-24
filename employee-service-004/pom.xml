@@ -6,10 +6,17 @@
     <groupId>de.meziane.ms</groupId>
     <artifactId>tutorial-004</artifactId>
     <version>1.0-SNAPSHOT</version>
-  </parent>
-  <groupId>de.meziane.ms</groupId>
+  </parent>  
   <artifactId>employee-service-004</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  
   <name>employee-service</name>
   <url>http://maven.apache.org</url>
+  
+  <dependencies>
+  	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-client</artifactId>
+		</dependency>
+  </dependencies>
+  
 </project>
