@@ -91,11 +91,12 @@ message: Hello microservices world!
  ![Config Data from local repository for employee-service for dev profile after refresh](images/LiveRefreshOfConfigDataForEmployeeserviceDev.png?raw=true)
 
 ## The department-service and the employee-service
-We need now to make our microservices pick their respective configuration data fro the **config-service** 
+We need now to make our microservices pick up their respective configuration data from the **config-service**.
+ 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzczNjgwNDAsLTk0OTE2MzE0NywtOT
+eyJoaXN0b3J5IjpbLTE4NzYyOTQwNTAsLTk0OTE2MzE0NywtOT
 YyNTkwMjkzLDE4ODczOTkzODMsNjc3NTc4NzU5LC0xODk2MjUz
 NjMsMTkwMzkwODI4NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMj
 EzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2NywzNjU1Njkx
