@@ -78,19 +78,19 @@ server.port: 8081
 server.port: 9081
 ```
 If we start the  **config-service** and request http://localhost:8888/employee-service/dev we get:
- ![Config Data from local repository for employee-service](images/ConfigDataForEmployeeserviceDev.png?raw=true)
+ ![Config Data from local repository for employee-service for dev profile](images/ConfigDataForEmployeeserviceDev.png?raw=true)
  
  If we requrst http://localhost:8888/employee-service/prod we get:  
- ![enter image description here](images/ConfigDataForEmployeeserviceProd.png?raw=true)
+ ![Config Data from local repository for employee-service for prod profile](images/ConfigDataForEmployeeserviceProd.png?raw=true)
  
 
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjczMjE3MTAsMTg4NzM5OTM4Myw2Nz
-c1Nzg3NTksLTE4OTYyNTM2MywxOTAzOTA4Mjg3LDEwMDU4NTI3
-NjEsMjAzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUyMzMsMj
-E3NDA0NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1MjcxNzY2
-MTksMTg4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbLTMxMjAyODg2NSwxODg3Mzk5MzgzLDY3Nz
+U3ODc1OSwtMTg5NjI1MzYzLDE5MDM5MDgyODcsMTAwNTg1Mjc2
+MSwyMDMwOTQyNjY4LDIxMzQyNTM3ODEsMjA3Mjc4NTIzMywyMT
+c0MDQ3NjcsMzY1NTY5MTY1LC02NzczNTk4NDIsMTUyNzE3NjYx
+OSwxODg3MDYzNDAsMTkyMDExNTI1Nl19
 -->
