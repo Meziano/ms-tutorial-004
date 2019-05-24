@@ -59,7 +59,9 @@ spring.profiles.active=native
  + *spring.profiles.active*: its value must be set to *native* to tell **config-service** to use a file system repository. Per default **Spring Cloud Config Server** searches for files stored in the following locations, *classpath:/, classpath:/config, file:./, file:./config*. If we want to use another location on our computer we can use *spring.cloud.config.server.native.searchLocations*.    
 ### The file system repository
 Now we need to add configuration data for the  **employee-service** and **department-service** to the file system repository. To let things simple we add a *config* folder under *src/main/resources*. 
+
 ![The local repository](images/localRepoWithConfigFiles.png?raw=true)
+
 Furthermore we add the following configurationfiles:
 + department-service-dev.properties
 + department-service-prod.properties
@@ -98,10 +100,10 @@ We will use exactly the same
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4Mzk3NzExNiwtOTQ5MTYzMTQ3LC05Nj
-I1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2
-MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMT
-M0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2OTE2
-NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTksMTg4NzA2MzQwLDE5Mj
-AxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbNzU0Mjg0NjM2LC05NDkxNjMxNDcsLTk2Mj
+U5MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1MzYz
+LDE5MDM5MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMz
+QyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5MTY1
+LC02NzczNTk4NDIsMTUyNzE3NjYxOSwxODg3MDYzNDAsMTkyMD
+ExNTI1Nl19
 -->
