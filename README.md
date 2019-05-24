@@ -83,15 +83,20 @@ If we start the  **config-service** and request http://localhost:8888/employee-s
  If we requrst http://localhost:8888/employee-service/prod we get:  
  ![Config Data from local repository for employee-service for prod profile](images/ConfigDataForEmployeeserviceProd.png?raw=true)
 
-Let's add the following property to the employee-service.properties:
+Let's add the following property to the *employee-service.properties* and save the file :
+```
+message: Hello microservices world!
+```
+ If we request again  http://localhost:8888/employee-service/dev we get:
+ ![Config Data from local repository for employee-service for dev profile](images/ConfigDataForEmployeeserviceDev.png?raw=true)
+ https://github.com/Meziano/tutorial-004/blob/master/images/LiveRefreshOfConfigDataForEmployeeserviceDev.png
 
- 
 
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxODMzNDcxNSwxODg3Mzk5MzgzLDY3Nz
+eyJoaXN0b3J5IjpbMjAwODc3ODU3MCwxODg3Mzk5MzgzLDY3Nz
 U3ODc1OSwtMTg5NjI1MzYzLDE5MDM5MDgyODcsMTAwNTg1Mjc2
 MSwyMDMwOTQyNjY4LDIxMzQyNTM3ODEsMjA3Mjc4NTIzMywyMT
 c0MDQ3NjcsMzY1NTY5MTY1LC02NzczNTk4NDIsMTUyNzE3NjYx
