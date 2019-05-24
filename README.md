@@ -59,15 +59,16 @@ spring.profiles.active=native
 ### The file system repository
 Now we need to add configuration data for the  **employee-service** and **department-service** to the file system repository. To let things simple we add a *config* folder under *src/main/resources*. Furthermore we add the following configurationfiles:
 + department-service-dev.properties
-+ employee-service-dev.properties
++ department-service-prod.properties
 + employee-service-dev.properties
 + employee-service-prod.properties
-+ 
+
+ 
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODg3NDkwOCwxMDA1ODUyNzYxLDIwMz
+eyJoaXN0b3J5IjpbMTkwMzkwODI4NywxMDA1ODUyNzYxLDIwMz
 A5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2
 NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4OD
 cwNjM0MCwxOTIwMTE1MjU2XX0=
