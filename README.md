@@ -63,15 +63,19 @@ Now we need to add configuration data for the  **employee-service** and **depart
 + department-service-prod.properties
 + employee-service-dev.properties
 + employee-service-prod.properties
-For now the content of these files is in the following 
+For now these files containt just the port number for the related microservice:
+```
+
+```
+.is in the following 
  
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjE3NTIzNCwtMTg5NjI1MzYzLDE5MD
-M5MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMzQyNTM3
-ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5MTY1LC02Nz
-czNTk4NDIsMTUyNzE3NjYxOSwxODg3MDYzNDAsMTkyMDExNTI1
-Nl19
+eyJoaXN0b3J5IjpbLTEyMjY0NDcxOTIsLTE4OTYyNTM2MywxOT
+AzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMTM0MjUz
+NzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2OTE2NSwtNj
+c3MzU5ODQyLDE1MjcxNzY2MTksMTg4NzA2MzQwLDE5MjAxMTUy
+NTZdfQ==
 -->
