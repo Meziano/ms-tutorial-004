@@ -119,16 +119,16 @@ spring.application.name=employee-service
 spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ```
-When we start for example **employee-service** Spring notices the presence of a **bootstrap** file, so it starts an application context and asks the **config-service** after the configuration data. It must provide an *application name and the active profile. In this example,  it says: "Hello Config Server at http://localhost:8888, my **application-name**  is '*employee-service*' and I would like to have the configuration data for my **active profile** '*dev*'."
+When we start for example **employee-service** Spring notices the presence of a **bootstrap** file, so it starts an application context and asks the **config-service** after the configuration data for the application to start. It must provide an *application name* and the *active profile*. In this example,  it says: "Hello Config Server at http://localhost:8888, I need the configuration data to start the application  '*employee-service*' and I would like to have the configuration data for my **active profile** '*dev*'."
 The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-dev.properties*' (Note that we have until now used *.properties* files, but it's also possible and I find it better to use *.yml* file) and it finds one, so it hands the file's content over. 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyMDM0ODk4LC0xNTQ5NDMzMTMxLDg5OD
-k2OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMxNDcsLTk2MjU5MDI5
-MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1MzYzLDE5MD
-M5MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMzQyNTM3
-ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5MTY1LC02Nz
-czNTk4NDIsMTUyNzE3NjYxOSwxODg3MDYzNDAsMTkyMDExNTI1
-Nl19
+eyJoaXN0b3J5IjpbMTg5ODkyNzcwNSwtMTU0OTQzMzEzMSw4OT
+g5NjkxNDgsLTM3NTY1OTY4MywtOTQ5MTYzMTQ3LC05NjI1OTAy
+OTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2MywxOT
+AzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMTM0MjUz
+NzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2OTE2NSwtNj
+c3MzU5ODQyLDE1MjcxNzY2MTksMTg4NzA2MzQwLDE5MjAxMTUy
+NTZdfQ==
 -->
