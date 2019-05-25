@@ -120,14 +120,15 @@ spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ```
 When the **employee-service** for example asks the **config-service** after its configuration data, it must identify itself with the application name and the active profile. In this example,  it says: "Hello Config Server at http://localhost:8888, my **application-name**  is '*employee-service*' and I would like to have the configuration data for my **active profile** '*dev*'."
-The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-dev.properties*' (Note that we have until now used *.properties* files, but it's also possible and I find it better to use *.yml* file) and it finds one, so it hands over 
+The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-dev.properties*' (Note that we have until now used *.properties* files, but it's also possible and I find it better to use *.yml* file) and it finds one, so it hands the file's content over. 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDk0MzMxMzEsODk4OTY5MTQ4LC0zNz
-U2NTk2ODMsLTk0OTE2MzE0NywtOTYyNTkwMjkzLDE4ODczOTkz
-ODMsNjc3NTc4NzU5LC0xODk2MjUzNjMsMTkwMzkwODI4NywxMD
-A1ODUyNzYxLDIwMzA5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1
-MjMzLDIxNzQwNDc2NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNT
-I3MTc2NjE5LDE4ODcwNjM0MCwxOTIwMTE1MjU2XX0=
+eyJoaXN0b3J5IjpbLTExMjY2MTA0MDEsLTE1NDk0MzMxMzEsOD
+k4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYyNTkw
+MjkzLDE4ODczOTkzODMsNjc3NTc4NzU5LC0xODk2MjUzNjMsMT
+kwMzkwODI4NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMjEzNDI1
+Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2NywzNjU1NjkxNjUsLT
+Y3NzM1OTg0MiwxNTI3MTc2NjE5LDE4ODcwNjM0MCwxOTIwMTE1
+MjU2XX0=
 -->
