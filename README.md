@@ -112,14 +112,15 @@ To tell our microservices about the new situation we must make them aware about 
   <artifactId>spring-cloud-config-client</artifactId>
 </dependency>
 ```  
-  
+### Let our services know about the config-service
+   
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OT
-E2MzE0NywtOTYyNTkwMjkzLDE4ODczOTkzODMsNjc3NTc4NzU5
-LC0xODk2MjUzNjMsMTkwMzkwODI4NywxMDA1ODUyNzYxLDIwMz
-A5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2
-NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4OD
-cwNjM0MCwxOTIwMTE1MjU2XX0=
+eyJoaXN0b3J5IjpbMTA4NTYxNTk3NSw4OTg5NjkxNDgsLTM3NT
+Y1OTY4MywtOTQ5MTYzMTQ3LC05NjI1OTAyOTMsMTg4NzM5OTM4
+Myw2Nzc1Nzg3NTksLTE4OTYyNTM2MywxOTAzOTA4Mjg3LDEwMD
+U4NTI3NjEsMjAzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUy
+MzMsMjE3NDA0NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1Mj
+cxNzY2MTksMTg4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
 -->
