@@ -104,7 +104,7 @@ message: Hello microservices world!
 We need now to make our microservices pick up their respective configuration data from the **config-service**.
 We will use exactly the same **department-service** and **employee-service** as in the [last tutorial](https://github.com/Meziano/tutorial-003).
 ### The configuration files
-We just remove the configuration files of the 2 applications as they must now pick up their respective configuration data from the **config-service**.
+We must remove the configuration files of the 2 applications as the applications must now pick up their respective configuration data from the **config-service**.
 To tell our microservice about the new situation we must make them aware about central configuration and to this end we add the following dependency to each of them:
 ```
 
@@ -112,10 +112,10 @@ To tell our microservice about the new situation we must make them aware about c
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NTY1OTY4MywtOTQ5MTYzMTQ3LC05Nj
-I1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2
-MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMT
-M0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2OTE2
-NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTksMTg4NzA2MzQwLDE5Mj
-AxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbMTA0MDgwNzYwMCwtMzc1NjU5NjgzLC05ND
+kxNjMxNDcsLTk2MjU5MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1
+OSwtMTg5NjI1MzYzLDE5MDM5MDgyODcsMTAwNTg1Mjc2MSwyMD
+MwOTQyNjY4LDIxMzQyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3
+NjcsMzY1NTY5MTY1LC02NzczNTk4NDIsMTUyNzE3NjYxOSwxOD
+g3MDYzNDAsMTkyMDExNTI1Nl19
 -->
