@@ -113,14 +113,14 @@ To tell our microservices about the new situation we must make them aware about 
 </dependency>
 ```  
 ### Let our services know about the config-service
-   
+To tell the **department-service** and **employee-service** about the **config-service** we have to add a bootstrap.properties file to both of them  
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NTYxNTk3NSw4OTg5NjkxNDgsLTM3NT
-Y1OTY4MywtOTQ5MTYzMTQ3LC05NjI1OTAyOTMsMTg4NzM5OTM4
-Myw2Nzc1Nzg3NTksLTE4OTYyNTM2MywxOTAzOTA4Mjg3LDEwMD
-U4NTI3NjEsMjAzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUy
-MzMsMjE3NDA0NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1Mj
-cxNzY2MTksMTg4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbLTExMzA4Mjg2NDIsODk4OTY5MTQ4LC0zNz
+U2NTk2ODMsLTk0OTE2MzE0NywtOTYyNTkwMjkzLDE4ODczOTkz
+ODMsNjc3NTc4NzU5LC0xODk2MjUzNjMsMTkwMzkwODI4NywxMD
+A1ODUyNzYxLDIwMzA5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1
+MjMzLDIxNzQwNDc2NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNT
+I3MTc2NjE5LDE4ODcwNjM0MCwxOTIwMTE1MjU2XX0=
 -->
