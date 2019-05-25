@@ -108,19 +108,18 @@ We must remove the configuration files of the 2 applications as the applications
 To tell our microservices about the new situation we must make them aware about central configuration and to this end we add the following dependency to each of them:
 ```
 <dependency>
-<groupId>org.springframework.cloud</groupId>
-
-<artifactId>spring-cloud-config-client</artifactId>
-
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-config-client</artifactId>
 </dependency>
-```    
+```  
+  
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjQ3MTI1MzQsLTM3NTY1OTY4MywtOT
-Q5MTYzMTQ3LC05NjI1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3
-NTksLTE4OTYyNTM2MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMj
-AzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0
-NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTksMT
-g4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbODk4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OT
+E2MzE0NywtOTYyNTkwMjkzLDE4ODczOTkzODMsNjc3NTc4NzU5
+LC0xODk2MjUzNjMsMTkwMzkwODI4NywxMDA1ODUyNzYxLDIwMz
+A5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQwNDc2
+NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNTI3MTc2NjE5LDE4OD
+cwNjM0MCwxOTIwMTE1MjU2XX0=
 -->
