@@ -119,14 +119,14 @@ spring.application.name=employee-service
 spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ```
-When the asks the after its configuration data, it must i
+When the **employee-service** asks the **employee-service** after its configuration data, it must identify itself with the application name and the active profile. In this example,   
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1MzI0MzUzLDg5ODk2OTE0OCwtMzc1Nj
-U5NjgzLC05NDkxNjMxNDcsLTk2MjU5MDI5MywxODg3Mzk5Mzgz
-LDY3NzU3ODc1OSwtMTg5NjI1MzYzLDE5MDM5MDgyODcsMTAwNT
-g1Mjc2MSwyMDMwOTQyNjY4LDIxMzQyNTM3ODEsMjA3Mjc4NTIz
-MywyMTc0MDQ3NjcsMzY1NTY5MTY1LC02NzczNTk4NDIsMTUyNz
-E3NjYxOSwxODg3MDYzNDAsMTkyMDExNTI1Nl19
+eyJoaXN0b3J5IjpbLTE4MzI4OTYxMDEsODk4OTY5MTQ4LC0zNz
+U2NTk2ODMsLTk0OTE2MzE0NywtOTYyNTkwMjkzLDE4ODczOTkz
+ODMsNjc3NTc4NzU5LC0xODk2MjUzNjMsMTkwMzkwODI4NywxMD
+A1ODUyNzYxLDIwMzA5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1
+MjMzLDIxNzQwNDc2NywzNjU1NjkxNjUsLTY3NzM1OTg0MiwxNT
+I3MTc2NjE5LDE4ODcwNjM0MCwxOTIwMTE1MjU2XX0=
 -->
