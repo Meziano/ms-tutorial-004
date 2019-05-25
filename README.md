@@ -105,17 +105,22 @@ We need now to make our microservices pick up their respective configuration dat
 We will use exactly the same **department-service** and **employee-service** as in the [last tutorial](https://github.com/Meziano/tutorial-003).
 ### The configuration files
 We must remove the configuration files of the 2 applications as the applications must now pick up their respective configuration data from the **config-service**.
-To tell our microservice about the new situation we must make them aware about central configuration and to this end we add the following dependency to each of them:
+To tell our microservices about the new situation we must make them aware about central configuration and to this end we add the following dependency to each of them:
 ```
+<dependency>
+<groupId>org.springframework.cloud</groupId>
 
+<artifactId>spring-cloud-config-client</artifactId>
+
+</dependency>
 ```    
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MDgwNzYwMCwtMzc1NjU5NjgzLC05ND
-kxNjMxNDcsLTk2MjU5MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1
-OSwtMTg5NjI1MzYzLDE5MDM5MDgyODcsMTAwNTg1Mjc2MSwyMD
-MwOTQyNjY4LDIxMzQyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3
-NjcsMzY1NTY5MTY1LC02NzczNTk4NDIsMTUyNzE3NjYxOSwxOD
-g3MDYzNDAsMTkyMDExNTI1Nl19
+eyJoaXN0b3J5IjpbLTE3NjQ3MTI1MzQsLTM3NTY1OTY4MywtOT
+Q5MTYzMTQ3LC05NjI1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3
+NTksLTE4OTYyNTM2MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMj
+AzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0
+NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTksMT
+g4NzA2MzQwLDE5MjAxMTUyNTZdfQ==
 -->
