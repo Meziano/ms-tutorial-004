@@ -200,15 +200,20 @@ message=Bonjour Monde des microservices!
 ```
 curl -X POST -H 'Content-Type: application/json' -i http://localhost:8082/actuator/refresh --data '{}'
 ```
-and request http://localhost:8082/message again  
+and request http://localhost:8082/message again, we get the updated message:
+
+![](images/employeeServiceMessageLiveUpdate.png?raw=true)
+
+### Let the empservices comunicate 
+  
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDExNDk0OTU3LDEyODkyNzUwMjMsMTIyMj
-c4MzM3NywtNjA5MzU2NjgxLC0zNDM0MDc3OTYsOTUwODE1NzMy
-LDM5MTU1MDU1LDE2NDI0MzMzODEsLTE4NjAwODQ0NDEsMTYwMz
-czNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2LC0xMzgyMjY1NTMz
-LC0xOTM2NTc2ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMzEsOD
-k4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYyNTkw
-MjkzXX0=
+eyJoaXN0b3J5IjpbLTEyMzgzOTE0MTIsNDExNDk0OTU3LDEyOD
+kyNzUwMjMsMTIyMjc4MzM3NywtNjA5MzU2NjgxLC0zNDM0MDc3
+OTYsOTUwODE1NzMyLDM5MTU1MDU1LDE2NDI0MzMzODEsLTE4Nj
+AwODQ0NDEsMTYwMzczNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2
+LC0xMzgyMjY1NTMzLC0xOTM2NTc2ODksLTEwNDQ4MDg3OTYsLT
+E1NDk0MzMxMzEsODk4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OTE2
+MzE0N119
 -->
