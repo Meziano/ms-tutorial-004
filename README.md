@@ -211,11 +211,12 @@ spring.application.name=department-service
 spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ``` 
+We can seee that the communication is still working
  
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0OTc2OTE2OCw0MTE0OTQ5NTcsMTI4OT
+eyJoaXN0b3J5IjpbMTkwODY4OTk1MSw0MTE0OTQ5NTcsMTI4OT
 I3NTAyMywxMjIyNzgzMzc3LC02MDkzNTY2ODEsLTM0MzQwNzc5
 Niw5NTA4MTU3MzIsMzkxNTUwNTUsMTY0MjQzMzM4MSwtMTg2MD
 A4NDQ0MSwxNjAzNzM2OTYzLDQ3NTQ2OTQxOSw3NDA0NjYxNTYs
