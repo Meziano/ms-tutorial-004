@@ -187,14 +187,19 @@ management.endpoints.web.exposure.include=*
 - to the `employee-service-dev.properties` under `src/main/resources/config` on the **config-service** 
 - to a new `application.properties` under `src/main/resources` on the **employee-service**.
 -  that we add  
-Now if we request 
+Now if we request http://localhost:8082/message we get:
+
+![](images/employeeServiceMessage.png?raw=true)
+
+Now if we update 
+ 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTI3NTAyMywxMjIyNzgzMzc3LC02MD
-kzNTY2ODEsLTM0MzQwNzc5Niw5NTA4MTU3MzIsMzkxNTUwNTUs
-MTY0MjQzMzM4MSwtMTg2MDA4NDQ0MSwxNjAzNzM2OTYzLDQ3NT
-Q2OTQxOSw3NDA0NjYxNTYsLTEzODIyNjU1MzMsLTE5MzY1NzY4
-OSwtMTA0NDgwODc5NiwtMTU0OTQzMzEzMSw4OTg5NjkxNDgsLT
-M3NTY1OTY4MywtOTQ5MTYzMTQ3LC05NjI1OTAyOTMsMTg4NzM5
-OTM4M119
+eyJoaXN0b3J5IjpbMTA2NjU1ODAyLDEyODkyNzUwMjMsMTIyMj
+c4MzM3NywtNjA5MzU2NjgxLC0zNDM0MDc3OTYsOTUwODE1NzMy
+LDM5MTU1MDU1LDE2NDI0MzMzODEsLTE4NjAwODQ0NDEsMTYwMz
+czNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2LC0xMzgyMjY1NTMz
+LC0xOTM2NTc2ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMzEsOD
+k4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYyNTkw
+MjkzXX0=
 -->
