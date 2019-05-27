@@ -133,16 +133,16 @@ The **config-service** checks in the repository it manages if there is a configu
 (Note that we have until now used *.properties* files, but it's also possible and I find it better to use *.yml* file)
 
 Requesting http://localhost:8082/employees will show us the list of the employees:
-![](images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
+![find all employees using configuration data fromn](images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
 
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjQ5MjYwMDEsNDc1NDY5NDE5LDc0MD
-Q2NjE1NiwtMTM4MjI2NTUzMywtMTkzNjU3Njg5LC0xMDQ0ODA4
-Nzk2LC0xNTQ5NDMzMTMxLDg5ODk2OTE0OCwtMzc1NjU5NjgzLC
-05NDkxNjMxNDcsLTk2MjU5MDI5MywxODg3Mzk5MzgzLDY3NzU3
-ODc1OSwtMTg5NjI1MzYzLDE5MDM5MDgyODcsMTAwNTg1Mjc2MS
-wyMDMwOTQyNjY4LDIxMzQyNTM3ODEsMjA3Mjc4NTIzMywyMTc0
-MDQ3NjddfQ==
+eyJoaXN0b3J5IjpbMTc0MjY1OTA0MCw0NzU0Njk0MTksNzQwND
+Y2MTU2LC0xMzgyMjY1NTMzLC0xOTM2NTc2ODksLTEwNDQ4MDg3
+OTYsLTE1NDk0MzMxMzEsODk4OTY5MTQ4LC0zNzU2NTk2ODMsLT
+k0OTE2MzE0NywtOTYyNTkwMjkzLDE4ODczOTkzODMsNjc3NTc4
+NzU5LC0xODk2MjUzNjMsMTkwMzkwODI4NywxMDA1ODUyNzYxLD
+IwMzA5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQw
+NDc2N119
 -->
