@@ -204,12 +204,13 @@ and request http://localhost:8082/message again, we get the updated message:
 
 ![](images/employeeServiceMessageLiveUpdate.png?raw=true)
 
-### Let the empservices comunicate 
+### Let the department-service and employee-service comunicate
+In a last step, let's start the **department-service**  
   
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzgzOTE0MTIsNDExNDk0OTU3LDEyOD
+eyJoaXN0b3J5IjpbLTEzODIxMDY2ODMsNDExNDk0OTU3LDEyOD
 kyNzUwMjMsMTIyMjc4MzM3NywtNjA5MzU2NjgxLC0zNDM0MDc3
 OTYsOTUwODE1NzMyLDM5MTU1MDU1LDE2NDI0MzMzODEsLTE4Nj
 AwODQ0NDEsMTYwMzczNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2
