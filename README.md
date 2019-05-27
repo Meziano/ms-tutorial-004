@@ -158,7 +158,25 @@ Root WebApplicationContext: initialization completed in 979 ms
 HikariPool-1 - Starting...
 HikariPool-1 - Start completed.
 ```
-The configuration properties are read once at the **employee-service**'s startup. To force the application to pull updated values from the *Config Server*, we just have to annotate the `MessageRestController` with the *Spring Cloud Config* `@RefreshScope` 
+The configuration properties are read once at the **employee-service**'s startup. To force the application to pull updated values from the *Config Server*, we just have to annotate the `EmployeeController` with the *Spring Cloud Config* `@RefreshScope` 
+```
+package de.meziane.ms.controller;
+...
+@RefreshScope
+@RestController
+public class EmployeeController {
+  @Autowired
+  EmployeeRepository employeeRepository;
+
+  @Value("${message:Hello default}")
+  private String message;
+
+  @RequestMapping("/message")
+  String getMessage() {
+    return this.message;
+	}
+```
+
 We must also enable the `/refresh` endpoint by adding :
 
 ```
@@ -167,11 +185,11 @@ management.endpoints.web.exposure.include=*
 to the 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MzQwNzc5Niw5NTA4MTU3MzIsMzkxNT
-UwNTUsMTY0MjQzMzM4MSwtMTg2MDA4NDQ0MSwxNjAzNzM2OTYz
-LDQ3NTQ2OTQxOSw3NDA0NjYxNTYsLTEzODIyNjU1MzMsLTE5Mz
-Y1NzY4OSwtMTA0NDgwODc5NiwtMTU0OTQzMzEzMSw4OTg5Njkx
-NDgsLTM3NTY1OTY4MywtOTQ5MTYzMTQ3LC05NjI1OTAyOTMsMT
-g4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2MywxOTAzOTA4
-Mjg3XX0=
+eyJoaXN0b3J5IjpbLTU4MzkxMDU2NywtMzQzNDA3Nzk2LDk1MD
+gxNTczMiwzOTE1NTA1NSwxNjQyNDMzMzgxLC0xODYwMDg0NDQx
+LDE2MDM3MzY5NjMsNDc1NDY5NDE5LDc0MDQ2NjE1NiwtMTM4Mj
+I2NTUzMywtMTkzNjU3Njg5LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMz
+MTMxLDg5ODk2OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMxNDcsLT
+k2MjU5MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1
+MzYzXX0=
 -->
