@@ -119,7 +119,7 @@ To tell our microservices about the new situation we must make them aware about 
   <artifactId>spring-cloud-config-client</artifactId>
 </dependency>
 ```  
-It's also possible to use a starter to configure an application as *config-client
+It's also possible to use the starter (spring-cloud-starter-config) to configure an application as *config-client*.
 ### Let our services know about the config-service
 To tell the **department-service** and **employee-service** about the **config-service** we have to add a *bootstrap.properties* file to both of them. In this *bootstrap.properties* we say to the application, that it has to get its configuration data from the **config-service**:
 ```
@@ -131,14 +131,15 @@ When we start for example **employee-service** Spring notices the presence of a 
 
 The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-**dev**.properties*' and it finds one, so it hands the file's content over. The **application context** requester starts now the **employee-service** with an *application context* based on the configuration data from the **config-service*.* 
 (Note that we have until now used *.properties* files, but it's also possible and I find it better to use *.yml* file)
+Requesting http://localhost:8082/employees will sho
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MzE2NDAzOSw3NDA0NjYxNTYsLTEzOD
-IyNjU1MzMsLTE5MzY1NzY4OSwtMTA0NDgwODc5NiwtMTU0OTQz
-MzEzMSw4OTg5NjkxNDgsLTM3NTY1OTY4MywtOTQ5MTYzMTQ3LC
-05NjI1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYy
-NTM2MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OC
-wyMTM0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2
-OTE2NV19
+eyJoaXN0b3J5IjpbLTQyNDEyNjA0LDc0MDQ2NjE1NiwtMTM4Mj
+I2NTUzMywtMTkzNjU3Njg5LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMz
+MTMxLDg5ODk2OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMxNDcsLT
+k2MjU5MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1
+MzYzLDE5MDM5MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LD
+IxMzQyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5
+MTY1XX0=
 -->
