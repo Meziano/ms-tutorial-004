@@ -119,17 +119,17 @@ spring.application.name=employee-service
 spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ```
-When we start for example **employee-service** Spring notices the presence of a **bootstrap** file, so it starts an **application context** with the content of the **bootstrap** file and asks the **config-service** after the configuration data for the application to start. It must provide an *application name* and the *active profile*. In this example,  it says: "Hello Config Server at http://localhost:8888, I need the configuration data to start the application  '*employee-service*' for the **active profile** '*dev*'."
+When we start for example **employee-service** Spring notices the presence of a **bootstrap** file, so it starts a parent **application context** with the content of the **bootstrap** file and asks the **config-service** after the configuration data for the application to start. It must provide an *application name* and the *active profile*. In this example,  it says: "Hello Config Server at http://localhost:8888, I need the configuration data to start the application  '*employee-service*' for the **active profile** '*dev*'."
 The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-**dev**.properties*' and it finds one, so it hands the file's content over. The **application context** requester starts now the **employee-service** with a 
 (Note that we have until now used *.properties* files, but it's also possible and I find it better to use *.yml* file)
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzY1NzY4OSwtMTA0NDgwODc5NiwtMT
-U0OTQzMzEzMSw4OTg5NjkxNDgsLTM3NTY1OTY4MywtOTQ5MTYz
-MTQ3LC05NjI1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLT
-E4OTYyNTM2MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0
-MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LD
-M2NTU2OTE2NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTksMTg4NzA2
-MzQwXX0=
+eyJoaXN0b3J5IjpbLTEzODIyNjU1MzMsLTE5MzY1NzY4OSwtMT
+A0NDgwODc5NiwtMTU0OTQzMzEzMSw4OTg5NjkxNDgsLTM3NTY1
+OTY4MywtOTQ5MTYzMTQ3LC05NjI1OTAyOTMsMTg4NzM5OTM4My
+w2Nzc1Nzg3NTksLTE4OTYyNTM2MywxOTAzOTA4Mjg3LDEwMDU4
+NTI3NjEsMjAzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUyMz
+MsMjE3NDA0NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1Mjcx
+NzY2MTldfQ==
 -->
