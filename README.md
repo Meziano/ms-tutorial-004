@@ -119,6 +119,7 @@ To tell our microservices about the new situation we must make them aware about 
   <artifactId>spring-cloud-config-client</artifactId>
 </dependency>
 ```  
+It's also possible to use a starter to configure an application as *config-client
 ### Let our services know about the config-service
 To tell the **department-service** and **employee-service** about the **config-service** we have to add a *bootstrap.properties* file to both of them. In this *bootstrap.properties* we say to the application, that it has to get its configuration data from the **config-service**:
 ```
@@ -133,11 +134,11 @@ The **config-service** checks in the repository it manages if there is a configu
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQwNDY2MTU2LC0xMzgyMjY1NTMzLC0xOT
-M2NTc2ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMzEsODk4OTY5
-MTQ4LC0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYyNTkwMjkzLD
-E4ODczOTkzODMsNjc3NTc4NzU5LC0xODk2MjUzNjMsMTkwMzkw
-ODI4NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMjEzNDI1Mzc4MS
-wyMDcyNzg1MjMzLDIxNzQwNDc2NywzNjU1NjkxNjUsLTY3NzM1
-OTg0Ml19
+eyJoaXN0b3J5IjpbLTI0MzE2NDAzOSw3NDA0NjYxNTYsLTEzOD
+IyNjU1MzMsLTE5MzY1NzY4OSwtMTA0NDgwODc5NiwtMTU0OTQz
+MzEzMSw4OTg5NjkxNDgsLTM3NTY1OTY4MywtOTQ5MTYzMTQ3LC
+05NjI1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYy
+NTM2MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OC
+wyMTM0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2
+OTE2NV19
 -->
