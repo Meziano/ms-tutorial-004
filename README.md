@@ -121,7 +121,11 @@ To tell our microservices about the new situation we must make them aware about 
 ```  
 It's also possible to use the starter (spring-cloud-starter-config) to configure an application as *config-client*.
 ### Let our services know about the config-service
-To tell the **department-service** and **employee-service** about the **config-service** we have to add a *bootstrap.properties* file to both of them. In this *bootstrap.properties* we say to the application, that it has to get its configuration data from the **config-service**:
+To tell the **department-service** and **employee-service** about the **config-service** we have to add a *bootstrap.properties* file to both of them. 
+
+> The properties in this file must be read in _before_ the rest of the application’s configuration is read from the Config Server, during the _bootstrap_ phase.
+
+In this *bootstrap.properties* we say to the application, that it has to get its configuration data from the **config-service**:
 ```
 spring.application.name=employee-service
 spring.profiles.active=dev
@@ -157,11 +161,11 @@ HikariPool-1 - Start completed.
 ```
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNzAzMTE3MywtMTg2MDA4NDQ0MSwxNj
-AzNzM2OTYzLDQ3NTQ2OTQxOSw3NDA0NjYxNTYsLTEzODIyNjU1
-MzMsLTE5MzY1NzY4OSwtMTA0NDgwODc5NiwtMTU0OTQzMzEzMS
-w4OTg5NjkxNDgsLTM3NTY1OTY4MywtOTQ5MTYzMTQ3LC05NjI1
-OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2My
-wxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMTM0
-MjUzNzgxXX0=
+eyJoaXN0b3J5IjpbMTE0MzAxNTc2LC0xODYwMDg0NDQxLDE2MD
+M3MzY5NjMsNDc1NDY5NDE5LDc0MDQ2NjE1NiwtMTM4MjI2NTUz
+MywtMTkzNjU3Njg5LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMzMTMxLD
+g5ODk2OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMxNDcsLTk2MjU5
+MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1MzYzLD
+E5MDM5MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMzQy
+NTM3ODFdfQ==
 -->
