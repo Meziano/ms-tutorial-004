@@ -180,16 +180,16 @@ public class EmployeeController {
 ```
 Please take note that a *getMessage()* method has been added to the `EmployeeController` to get the `message` from *config-service*. 
 
-We must also enable the `/refresh` endpoint by adding  :
+We must also enable the `/refresh` endpoint by adding:
 ```
 management.endpoints.web.exposure.include=*
 ```
-- to the `employee-service-dev.properties` under `src/main/resources/config` on the **config-service** 
-- to a new `application.properties` under `src/main/resources` on the **employee-service**.
+- either to the `employee-service-dev.properties` under `src/main/resources/config` on the **config-service** 
+- or to a new `application.properties` under `src/main/resources` on the **employee-service**.
   
 Now if we request http://localhost:8082/message we get:
 
-![](images/employeeServiceMessage.png?raw=true)
+![message ](images/employeeServiceMessage.png?raw=true)
 
 Now if we:
 1. change the value of message in the *employee-service-dev.properties* file to
@@ -216,7 +216,7 @@ We can see that the communication is still working.
 ### Summary
 Our **department-service** and **employee-service** communicate as in the [last tuturial](https://github.com/Meziano/tutorial-003), but now they pull their respective configuration data  from the introduced **config-service** with an embedded **config server** that manages the configuration data in a file-system backend repository.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc2MzYyODQ0LDEwNzY2MTM1MjcsNDExND
+eyJoaXN0b3J5IjpbMTM3ODMxMTE3LDEwNzY2MTM1MjcsNDExND
 k0OTU3LDEyODkyNzUwMjMsMTIyMjc4MzM3NywtNjA5MzU2Njgx
 LC0zNDM0MDc3OTYsOTUwODE1NzMyLDM5MTU1MDU1LDE2NDI0Mz
 MzODEsLTE4NjAwODQ0NDEsMTYwMzczNjk2Myw0NzU0Njk0MTks
