@@ -99,23 +99,48 @@ message: Hello microservices world!
 
 
  ![Config Data from local repository for employee-service for dev profile after refresh](images/LiveRefreshOfConfigDataForEmployeeserviceDev.png?raw=true)
+ 
+ To summurize her is a quotation from [Spring Cloud Config](https://cloud.spring.io/spring-cloud-config/multi/multi__spring_cloud_config_client.html):
+ > The Config Service serves property sources from `/{name}/{profile}/{label}`, where the default bindings in the client app are as follows:
+>
+>-   "name" = `${spring.application.name}`
+>-   "profile" = `${spring.profiles.active}` 
+>-   "label" = "master"
 
 ## The department-service and the employee-service
 We need now to make our microservices pick up their respective configuration data from the **config-service**.
 We will use exactly the same **department-service** and **employee-service** as in the [last tutorial](https://github.com/Meziano/tutorial-003).
 ### The configuration files
-We just remove the configuration files of the 2 applications as they must now pick up their respective configuration data from the **config-service**.
-To tell our microservice about the new situation we must make them aware about central configuration and to this end we add the following dependency to each of them:
+We must remove the configuration files of the 2 applications as the applications must now pick up their respective configuration data from the **config-service**.
+To tell our microservices about the new situation we must make them aware about central configuration and to this end we add the following dependency to each of them:
 ```
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-config-client</artifactId>
+</dependency>
+```  
+It's also possible to use the starter (spring-cloud-starter-config) to configure an application as *config-client*.
+### Let our services know about the config-service
+To tell the **department-service** and **employee-service** about the **config-service** we have to add a *bootstrap.properties* file to both of them. In this *bootstrap.properties* we say to the application, that it has to get its configuration data from the **config-service**:
+```
+spring.application.name=employee-service
+spring.profiles.active=dev
+spring.cloud.config.url=http://localhost:8888
+```
+When we start for example **employee-service** Spring notices the presence of a **bootstrap** file, so it starts a parent **application context** with the content of the **bootstrap** file and asks the **config-service** after the configuration data for the application to start. It must provide an *application name* and the *active profile*. In this example,  it says: "Hello Config Server at http://localhost:8888, I need the configuration data to start the application  '*employee-service*' for the **active profile** '*dev*'."
 
-```    
+The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-**dev**.properties*' and it finds one, so it hands the file's content over. The **application context** requester starts now the **employee-service** with an *application context* based on the configuration data from the **config-service*.* 
+(Note that we have until now used *.properties* files, but it's also possible and I find it better to use *.yml* file)
+Requesting http://localhost:8082/employees will show us the list of the employees:
+
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NTY1OTY4MywtOTQ5MTYzMTQ3LC05Nj
-I1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2
-MywxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMT
-M0MjUzNzgxLDIwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2OTE2
-NSwtNjc3MzU5ODQyLDE1MjcxNzY2MTksMTg4NzA2MzQwLDE5Mj
-AxMTUyNTZdfQ==
+eyJoaXN0b3J5IjpbNDc1NDY5NDE5LDc0MDQ2NjE1NiwtMTM4Mj
+I2NTUzMywtMTkzNjU3Njg5LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMz
+MTMxLDg5ODk2OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMxNDcsLT
+k2MjU5MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1
+MzYzLDE5MDM5MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LD
+IxMzQyNTM3ODEsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5
+MTY1XX0=
 -->
