@@ -158,15 +158,15 @@ Root WebApplicationContext: initialization completed in 979 ms
 HikariPool-1 - Starting...
 HikariPool-1 - Start completed.
 ```
-The configuration properties are read once at the **employee-service**'s startup. To force the application to pull updated values from the *Config Server* s configuration and 
+The configuration properties are read once at the **employee-service**'s startup. To force the application to pull updated values from the *Config Server*, we just have to annotate the `MessageRestController`   
 > By default, the configuration values are read on the client’s startup, and not again. You can force a bean to _refresh_ its configuration - to pull updated values from the Config Server - by annotating the `MessageRestController` with the Spring Cloud Config `@RefreshScope` and then by triggering a _refresh_ event
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMzE0NjEwOSwzOTE1NTA1NSwxNjQyND
-MzMzgxLC0xODYwMDg0NDQxLDE2MDM3MzY5NjMsNDc1NDY5NDE5
-LDc0MDQ2NjE1NiwtMTM4MjI2NTUzMywtMTkzNjU3Njg5LC0xMD
-Q0ODA4Nzk2LC0xNTQ5NDMzMTMxLDg5ODk2OTE0OCwtMzc1NjU5
-NjgzLC05NDkxNjMxNDcsLTk2MjU5MDI5MywxODg3Mzk5MzgzLD
-Y3NzU3ODc1OSwtMTg5NjI1MzYzLDE5MDM5MDgyODcsMTAwNTg1
-Mjc2MV19
+eyJoaXN0b3J5IjpbNDAzNzgwNjc4LDM5MTU1MDU1LDE2NDI0Mz
+MzODEsLTE4NjAwODQ0NDEsMTYwMzczNjk2Myw0NzU0Njk0MTks
+NzQwNDY2MTU2LC0xMzgyMjY1NTMzLC0xOTM2NTc2ODksLTEwND
+Q4MDg3OTYsLTE1NDk0MzMxMzEsODk4OTY5MTQ4LC0zNzU2NTk2
+ODMsLTk0OTE2MzE0NywtOTYyNTkwMjkzLDE4ODczOTkzODMsNj
+c3NTc4NzU5LC0xODk2MjUzNjMsMTkwMzkwODI4NywxMDA1ODUy
+NzYxXX0=
 -->
