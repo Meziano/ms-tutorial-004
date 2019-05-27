@@ -183,14 +183,14 @@ We must also enable the `/refresh` endpoint by adding :
 ```
 management.endpoints.web.exposure.include=*
 ```
-to an `application.properties` that we add  
+to the `application.properties` that we add  
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwOTM1NjY4MSwtMzQzNDA3Nzk2LDk1MD
-gxNTczMiwzOTE1NTA1NSwxNjQyNDMzMzgxLC0xODYwMDg0NDQx
-LDE2MDM3MzY5NjMsNDc1NDY5NDE5LDc0MDQ2NjE1NiwtMTM4Mj
-I2NTUzMywtMTkzNjU3Njg5LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMz
-MTMxLDg5ODk2OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMxNDcsLT
-k2MjU5MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1
-MzYzXX0=
+eyJoaXN0b3J5IjpbOTc3MjgyNjg3LC02MDkzNTY2ODEsLTM0Mz
+QwNzc5Niw5NTA4MTU3MzIsMzkxNTUwNTUsMTY0MjQzMzM4MSwt
+MTg2MDA4NDQ0MSwxNjAzNzM2OTYzLDQ3NTQ2OTQxOSw3NDA0Nj
+YxNTYsLTEzODIyNjU1MzMsLTE5MzY1NzY4OSwtMTA0NDgwODc5
+NiwtMTU0OTQzMzEzMSw4OTg5NjkxNDgsLTM3NTY1OTY4MywtOT
+Q5MTYzMTQ3LC05NjI1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3
+NTldfQ==
 -->
