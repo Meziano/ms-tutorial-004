@@ -135,16 +135,33 @@ The **config-service** checks in the repository it manages if there is a configu
 Requesting http://localhost:8082/employees will show us the list of the employees:
 
 ![find all employees using configuration data from config-service](images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
-It's important to get a 
-
-
+It's important to get a look at the console:
+```
+Fetching config from server at : http://localhost:8888
+Located environment: name=employee-service, profiles=[dev], label=null, version=null, state=null
+Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/config/employee-service-dev.properties'}]}
+The following profiles are active: dev
+Bootstrapping Spring Data repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 38ms. Found 1 repository interfaces.
+BeanFactory id=101fc7cf-7026-3d45-ba7d-ebd00c85ab94
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9e56adac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ba70b0a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8082 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.17]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 979 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+```
+Th
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzczNjk2Myw0NzU0Njk0MTksNzQwND
-Y2MTU2LC0xMzgyMjY1NTMzLC0xOTM2NTc2ODksLTEwNDQ4MDg3
-OTYsLTE1NDk0MzMxMzEsODk4OTY5MTQ4LC0zNzU2NTk2ODMsLT
-k0OTE2MzE0NywtOTYyNTkwMjkzLDE4ODczOTkzODMsNjc3NTc4
-NzU5LC0xODk2MjUzNjMsMTkwMzkwODI4NywxMDA1ODUyNzYxLD
-IwMzA5NDI2NjgsMjEzNDI1Mzc4MSwyMDcyNzg1MjMzLDIxNzQw
-NDc2N119
+eyJoaXN0b3J5IjpbLTEwNzI5MzM5LDE2MDM3MzY5NjMsNDc1ND
+Y5NDE5LDc0MDQ2NjE1NiwtMTM4MjI2NTUzMywtMTkzNjU3Njg5
+LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMzMTMxLDg5ODk2OTE0OCwtMz
+c1NjU5NjgzLC05NDkxNjMxNDcsLTk2MjU5MDI5MywxODg3Mzk5
+MzgzLDY3NzU3ODc1OSwtMTg5NjI1MzYzLDE5MDM5MDgyODcsMT
+AwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMzQyNTM3ODEsMjA3Mjc4
+NTIzM119
 -->
