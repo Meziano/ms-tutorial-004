@@ -178,7 +178,8 @@ public class EmployeeController {
   ...
 }
 ```
-Note the *getMessage()* added to the `EmployeeController` to get the `message` from *config-service*. 
+Please take note that a *getMessage()* method has been added to the `EmployeeController` to get the `message` from *config-service*. 
+
 We must also enable the `/refresh` endpoint by adding :
 ```
 management.endpoints.web.exposure.include=*
@@ -186,9 +187,10 @@ management.endpoints.web.exposure.include=*
 - to the `employee-service-dev.properties` under `src/main/resources/config` on the **config-service** 
 - to a new `application.properties` under `src/main/resources` on the **employee-service**.
 -  that we add  
+Now if w
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODU4NDY4LDEyMjI3ODMzNzcsLTYwOT
+eyJoaXN0b3J5IjpbNTA2NTAxNjc5LDEyMjI3ODMzNzcsLTYwOT
 M1NjY4MSwtMzQzNDA3Nzk2LDk1MDgxNTczMiwzOTE1NTA1NSwx
 NjQyNDMzMzgxLC0xODYwMDg0NDQxLDE2MDM3MzY5NjMsNDc1ND
 Y5NDE5LDc0MDQ2NjE1NiwtMTM4MjI2NTUzMywtMTkzNjU3Njg5
