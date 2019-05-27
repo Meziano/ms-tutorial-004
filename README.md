@@ -183,14 +183,15 @@ We must also enable the `/refresh` endpoint by adding :
 ```
 management.endpoints.web.exposure.include=*
 ```
-- to the `employee-service-dev.properties` under `src/main/resources/config` on the **config-service** that we add  
+- to the `employee-service-dev.properties` under `src/main/resources/config` on the **config-service** 
+- to a new `application.properties` under `src/main/resources`that we add  
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNjA1MzI3LC02MDkzNTY2ODEsLTM0Mz
-QwNzc5Niw5NTA4MTU3MzIsMzkxNTUwNTUsMTY0MjQzMzM4MSwt
-MTg2MDA4NDQ0MSwxNjAzNzM2OTYzLDQ3NTQ2OTQxOSw3NDA0Nj
-YxNTYsLTEzODIyNjU1MzMsLTE5MzY1NzY4OSwtMTA0NDgwODc5
-NiwtMTU0OTQzMzEzMSw4OTg5NjkxNDgsLTM3NTY1OTY4MywtOT
-Q5MTYzMTQ3LC05NjI1OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3
-NTldfQ==
+eyJoaXN0b3J5IjpbMTIyMjc4MzM3NywtNjA5MzU2NjgxLC0zND
+M0MDc3OTYsOTUwODE1NzMyLDM5MTU1MDU1LDE2NDI0MzMzODEs
+LTE4NjAwODQ0NDEsMTYwMzczNjk2Myw0NzU0Njk0MTksNzQwND
+Y2MTU2LC0xMzgyMjY1NTMzLC0xOTM2NTc2ODksLTEwNDQ4MDg3
+OTYsLTE1NDk0MzMxMzEsODk4OTY5MTQ4LC0zNzU2NTk2ODMsLT
+k0OTE2MzE0NywtOTYyNTkwMjkzLDE4ODczOTkzODMsNjc3NTc4
+NzU5XX0=
 -->
