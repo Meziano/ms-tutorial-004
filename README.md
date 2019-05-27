@@ -139,6 +139,7 @@ The **config-service** checks in the repository it manages if there is a configu
 Requesting http://localhost:8082/employees will show us the list of the employees:
 
 ![find all employees using configuration data from config-service](images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
+
 It's important to have a look at the console:
 ```
 Fetching config from server at : http://localhost:8888
@@ -219,7 +220,7 @@ We can see that the communication is still working by requisting http://localhos
 ### Summary
 Our **department-service** and **employee-service** communicate as in the [last tuturial](https://github.com/Meziano/tutorial-003), but now they pull their respective configuration data  from the introduced **config-service** with an embedded **config server** that manages the configuration data in a file-system backend repository.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODc1Mjc0MTgsMTc2Njg4MDk0MiwtMT
+eyJoaXN0b3J5IjpbLTIwNDk0NDE3NDAsMTc2Njg4MDk0MiwtMT
 MyMjk3NzM0MSwxMzc4MzExMTcsMTA3NjYxMzUyNyw0MTE0OTQ5
 NTcsMTI4OTI3NTAyMywxMjIyNzgzMzc3LC02MDkzNTY2ODEsLT
 M0MzQwNzc5Niw5NTA4MTU3MzIsMzkxNTUwNTUsMTY0MjQzMzM4
