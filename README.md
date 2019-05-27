@@ -191,15 +191,17 @@ Now if we request http://localhost:8082/message we get:
 
 ![](images/employeeServiceMessage.png?raw=true)
 
-Now if we update 
- 
+Now if we change the value of message in the *employee-service-dev.properties* file to
+````
+message=Bonjour Monde des microservices! 
+
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NjU1ODAyLDEyODkyNzUwMjMsMTIyMj
-c4MzM3NywtNjA5MzU2NjgxLC0zNDM0MDc3OTYsOTUwODE1NzMy
-LDM5MTU1MDU1LDE2NDI0MzMzODEsLTE4NjAwODQ0NDEsMTYwMz
-czNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2LC0xMzgyMjY1NTMz
-LC0xOTM2NTc2ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMzEsOD
-k4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYyNTkw
-MjkzXX0=
+eyJoaXN0b3J5IjpbLTY2OTA2MjE0MCwxMjg5Mjc1MDIzLDEyMj
+I3ODMzNzcsLTYwOTM1NjY4MSwtMzQzNDA3Nzk2LDk1MDgxNTcz
+MiwzOTE1NTA1NSwxNjQyNDMzMzgxLC0xODYwMDg0NDQxLDE2MD
+M3MzY5NjMsNDc1NDY5NDE5LDc0MDQ2NjE1NiwtMTM4MjI2NTUz
+MywtMTkzNjU3Njg5LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMzMTMxLD
+g5ODk2OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMxNDcsLTk2MjU5
+MDI5M119
 -->
