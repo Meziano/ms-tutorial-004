@@ -120,16 +120,16 @@ spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ```
 When we start for example **employee-service** Spring notices the presence of a **bootstrap** file, so it starts a parent **application context** with the content of the **bootstrap** file and asks the **config-service** after the configuration data for the application to start. It must provide an *application name* and the *active profile*. In this example,  it says: "Hello Config Server at http://localhost:8888, I need the configuration data to start the application  '*employee-service*' for the **active profile** '*dev*'."
-The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-**dev**.properties*' and it finds one, so it hands the file's content over. The **application context** requester starts now the **employee-service** with a 
+The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-**dev**.properties*' and it finds one, so it hands the file's content over. The **application context** requester starts now the **employee-service** with an *application context* based on the configuration data fr 
 (Note that we have until now used *.properties* files, but it's also possible and I find it better to use *.yml* file)
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODIyNjU1MzMsLTE5MzY1NzY4OSwtMT
-A0NDgwODc5NiwtMTU0OTQzMzEzMSw4OTg5NjkxNDgsLTM3NTY1
-OTY4MywtOTQ5MTYzMTQ3LC05NjI1OTAyOTMsMTg4NzM5OTM4My
-w2Nzc1Nzg3NTksLTE4OTYyNTM2MywxOTAzOTA4Mjg3LDEwMDU4
-NTI3NjEsMjAzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNzI3ODUyMz
-MsMjE3NDA0NzY3LDM2NTU2OTE2NSwtNjc3MzU5ODQyLDE1Mjcx
-NzY2MTldfQ==
+eyJoaXN0b3J5IjpbLTg5ODY1MzgzOSwtMTM4MjI2NTUzMywtMT
+kzNjU3Njg5LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMzMTMxLDg5ODk2
+OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMxNDcsLTk2MjU5MDI5My
+wxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1MzYzLDE5MDM5
+MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMzQyNTM3OD
+EsMjA3Mjc4NTIzMywyMTc0MDQ3NjcsMzY1NTY5MTY1LC02Nzcz
+NTk4NDJdfQ==
 -->
