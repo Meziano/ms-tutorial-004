@@ -100,7 +100,7 @@ message: Hello microservices world!
 
  ![Config Data from local repository for employee-service for dev profile after refresh](images/LiveRefreshOfConfigDataForEmployeeserviceDev.png?raw=true)
  
- To summurize her is a quotation from [Spring Cloud Config](https://cloud.spring.io/spring-cloud-config/multi/multi__spring_cloud_config_client.html):
+ To summurize here is a quotation from [Spring Cloud Config](https://cloud.spring.io/spring-cloud-config/multi/multi__spring_cloud_config_client.html):
  > The Config Service serves property sources from `/{name}/{profile}/{label}`, where the default bindings in the client app are as follows:
 >
 >-   "name" = `${spring.application.name}`
@@ -127,6 +127,7 @@ spring.application.name=employee-service
 spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ```
+>The properties to configure the Config Client must necessarily be read in _before_ the rest of the application’s configuration is read from the Config Server, during the _bootstrap_ phase. Specify the client’s `spring.application.name` as `a-bootiful-client` and the location of the Config Server `spring.cloud.config.uri` in `configuration-client/src/main/resources/bootstrap.properties`, where it will be loaded earlier than any other configuration.
 When we start for example **employee-service** Spring notices the presence of a **bootstrap** file, so it starts a parent **application context** with the content of the **bootstrap** file and asks the **config-service** after the configuration data for the application to start. It must provide an *application name* and the *active profile*. In this example,  it says: "Hello Config Server at http://localhost:8888, I need the configuration data to start the application  '*employee-service*' for the **active profile** '*dev*'."
 
 The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-**dev**.properties*' and it finds one, so it hands the file's content over. The **application context** requester starts now the **employee-service** with an *application context* based on the configuration data from the **config-service*.* 
@@ -156,7 +157,7 @@ HikariPool-1 - Start completed.
 ```
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzQwMzE3MjksLTE4NjAwODQ0NDEsMT
+eyJoaXN0b3J5IjpbLTExMDM2OTgwNzEsLTE4NjAwODQ0NDEsMT
 YwMzczNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2LC0xMzgyMjY1
 NTMzLC0xOTM2NTc2ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMz
 EsODk4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYy
