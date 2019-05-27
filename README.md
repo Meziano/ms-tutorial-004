@@ -191,14 +191,20 @@ Now if we request http://localhost:8082/message we get:
 
 ![](images/employeeServiceMessage.png?raw=true)
 
-Now if we change the value of message in the *employee-service-dev.properties* file to
+Now if we:
+1. change the value of message in the *employee-service-dev.properties* file to
 ```
 message=Bonjour Monde des microservices! 
 ```
-and send a POST actuator/refresh with an empty JSON-object and 'Content-Type='
+and send a POST actuator/refresh with an empty JSON-object and 'Content-Type: application/json' in the header:
+```
+curl -X POST -H 'Content-Type: application/json' -i http://localhost:8082/actuator/refresh --data '{}'
+```
+and 
+
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNzAzMDM5OSwxMjg5Mjc1MDIzLDEyMj
+eyJoaXN0b3J5IjpbMTAzNjk5MDI2NCwxMjg5Mjc1MDIzLDEyMj
 I3ODMzNzcsLTYwOTM1NjY4MSwtMzQzNDA3Nzk2LDk1MDgxNTcz
 MiwzOTE1NTA1NSwxNjQyNDMzMzgxLC0xODYwMDg0NDQxLDE2MD
 M3MzY5NjMsNDc1NDY5NDE5LDc0MDQ2NjE1NiwtMTM4MjI2NTUz
