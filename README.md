@@ -211,16 +211,16 @@ spring.application.name=department-service
 spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ``` 
-We can seee that the communication is still working
+We can see that the communication is still working.
  
-
 ### Summary
+We have now our **department-service** and **employee-service** communi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODY4OTk1MSw0MTE0OTQ5NTcsMTI4OT
-I3NTAyMywxMjIyNzgzMzc3LC02MDkzNTY2ODEsLTM0MzQwNzc5
-Niw5NTA4MTU3MzIsMzkxNTUwNTUsMTY0MjQzMzM4MSwtMTg2MD
-A4NDQ0MSwxNjAzNzM2OTYzLDQ3NTQ2OTQxOSw3NDA0NjYxNTYs
-LTEzODIyNjU1MzMsLTE5MzY1NzY4OSwtMTA0NDgwODc5NiwtMT
-U0OTQzMzEzMSw4OTg5NjkxNDgsLTM3NTY1OTY4MywtOTQ5MTYz
-MTQ3XX0=
+eyJoaXN0b3J5IjpbNjYyNjAxOTM5LDQxMTQ5NDk1NywxMjg5Mj
+c1MDIzLDEyMjI3ODMzNzcsLTYwOTM1NjY4MSwtMzQzNDA3Nzk2
+LDk1MDgxNTczMiwzOTE1NTA1NSwxNjQyNDMzMzgxLC0xODYwMD
+g0NDQxLDE2MDM3MzY5NjMsNDc1NDY5NDE5LDc0MDQ2NjE1Niwt
+MTM4MjI2NTUzMywtMTkzNjU3Njg5LC0xMDQ0ODA4Nzk2LC0xNT
+Q5NDMzMTMxLDg5ODk2OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMx
+NDddfQ==
 -->
