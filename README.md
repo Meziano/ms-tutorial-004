@@ -55,7 +55,7 @@ spring.application.name=config-service
 spring.profiles.active=native
 ```
  For now the 2 important  configuration's properties for **config-service** are:
- + *server.port*: to get access to the configuration data saved in the repository amnaged by **config-service**, a microservice need this value. 
+ + *server.port*: to get access to the configuration data saved in the repository managed by **config-service**, a microservice need this value. 
  + *spring.profiles.active*: its value must be set to *native* to tell **config-service** to use a file system repository. Per default **Spring Cloud Config Server** searches for files stored in the following locations, *classpath:/, classpath:/config, file:./, file:./config*. If we want to use another location on our computer we can use *spring.cloud.config.server.native.searchLocations*.    
 ### The file system repository
 Now we need to add configuration data for the  **employee-service** and **department-service** to the file system repository. To let things simple we add a *config* folder under *src/main/resources*. 
@@ -156,11 +156,11 @@ HikariPool-1 - Start completed.
 ```
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjAwODQ0NDEsMTYwMzczNjk2Myw0Nz
-U0Njk0MTksNzQwNDY2MTU2LC0xMzgyMjY1NTMzLC0xOTM2NTc2
-ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMzEsODk4OTY5MTQ4LC
-0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYyNTkwMjkzLDE4ODcz
-OTkzODMsNjc3NTc4NzU5LC0xODk2MjUzNjMsMTkwMzkwODI4Ny
-wxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMjEzNDI1Mzc4MSwyMDcy
-Nzg1MjMzXX0=
+eyJoaXN0b3J5IjpbLTExMzQwMzE3MjksLTE4NjAwODQ0NDEsMT
+YwMzczNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2LC0xMzgyMjY1
+NTMzLC0xOTM2NTc2ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMz
+EsODk4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYy
+NTkwMjkzLDE4ODczOTkzODMsNjc3NTc4NzU5LC0xODk2MjUzNj
+MsMTkwMzkwODI4NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMjEz
+NDI1Mzc4MV19
 -->
