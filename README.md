@@ -100,7 +100,12 @@ message: Hello microservices world!
 
  ![Config Data from local repository for employee-service for dev profile after refresh](images/LiveRefreshOfConfigDataForEmployeeserviceDev.png?raw=true)
  
- 
+ To summurize her is a quotation from [Spring Cloud Config](https://cloud.spring.io/spring-cloud-config/multi/multi__spring_cloud_config_client.html):
+ > The Config Service serves property sources from `/{name}/{profile}/{label}`, where the default bindings in the client app are as follows:
+>
+>-   "name" = `${spring.application.name}`
+>-   "profile" = `${spring.profiles.active}` 
+>-   "label" = "master"
 
 ## The department-service and the employee-service
 We need now to make our microservices pick up their respective configuration data from the **config-service**.
@@ -128,11 +133,11 @@ The **config-service** checks in the repository it manages if there is a configu
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcwMzExOTIsLTEzODIyNjU1MzMsLTE5Mz
-Y1NzY4OSwtMTA0NDgwODc5NiwtMTU0OTQzMzEzMSw4OTg5Njkx
-NDgsLTM3NTY1OTY4MywtOTQ5MTYzMTQ3LC05NjI1OTAyOTMsMT
-g4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2MywxOTAzOTA4
-Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMTM0MjUzNzgxLD
-IwNzI3ODUyMzMsMjE3NDA0NzY3LDM2NTU2OTE2NSwtNjc3MzU5
-ODQyXX0=
+eyJoaXN0b3J5IjpbNzQwNDY2MTU2LC0xMzgyMjY1NTMzLC0xOT
+M2NTc2ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMzEsODk4OTY5
+MTQ4LC0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYyNTkwMjkzLD
+E4ODczOTkzODMsNjc3NTc4NzU5LC0xODk2MjUzNjMsMTkwMzkw
+ODI4NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMjEzNDI1Mzc4MS
+wyMDcyNzg1MjMzLDIxNzQwNDc2NywzNjU1NjkxNjUsLTY3NzM1
+OTg0Ml19
 -->
