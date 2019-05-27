@@ -187,7 +187,7 @@ management.endpoints.web.exposure.include=*
 - either to the `employee-service-dev.properties` under `src/main/resources/config` on the **config-service** 
 - or to a new `application.properties` under `src/main/resources` on the **employee-service**.
   
-Now if we request http://localhost:8082/message we get:
+If we request http://localhost:8082/message we get:
 
 ![message ](images/employeeServiceMessage.png?raw=true)
 
@@ -216,11 +216,11 @@ We can see that the communication is still working.
 ### Summary
 Our **department-service** and **employee-service** communicate as in the [last tuturial](https://github.com/Meziano/tutorial-003), but now they pull their respective configuration data  from the introduced **config-service** with an embedded **config server** that manages the configuration data in a file-system backend repository.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3ODMxMTE3LDEwNzY2MTM1MjcsNDExND
-k0OTU3LDEyODkyNzUwMjMsMTIyMjc4MzM3NywtNjA5MzU2Njgx
-LC0zNDM0MDc3OTYsOTUwODE1NzMyLDM5MTU1MDU1LDE2NDI0Mz
-MzODEsLTE4NjAwODQ0NDEsMTYwMzczNjk2Myw0NzU0Njk0MTks
-NzQwNDY2MTU2LC0xMzgyMjY1NTMzLC0xOTM2NTc2ODksLTEwND
-Q4MDg3OTYsLTE1NDk0MzMxMzEsODk4OTY5MTQ4LC0zNzU2NTk2
-ODNdfQ==
+eyJoaXN0b3J5IjpbLTEzMjI5NzczNDEsMTM3ODMxMTE3LDEwNz
+Y2MTM1MjcsNDExNDk0OTU3LDEyODkyNzUwMjMsMTIyMjc4MzM3
+NywtNjA5MzU2NjgxLC0zNDM0MDc3OTYsOTUwODE1NzMyLDM5MT
+U1MDU1LDE2NDI0MzMzODEsLTE4NjAwODQ0NDEsMTYwMzczNjk2
+Myw0NzU0Njk0MTksNzQwNDY2MTU2LC0xMzgyMjY1NTMzLC0xOT
+M2NTc2ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMzEsODk4OTY5
+MTQ4XX0=
 -->
