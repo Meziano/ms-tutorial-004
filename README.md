@@ -131,7 +131,7 @@ spring.application.name=employee-service
 spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ```
-The properties to configure the Config Client must necessarily be read in _before_ the rest of the application’s configuration is read from the Config Server, during the _bootstrap_ phase. Specify the client’s `spring.application.name` as `a-bootiful-client` and the location of the Config Server `spring.cloud.config.uri` in `configuration-client/src/main/resources/bootstrap.properties`, where it will be loaded earlier than any other configuration.
+Specify the client’s `spring.application.name` as `a-bootiful-client` and the location of the Config Server `spring.cloud.config.uri` in `configuration-client/src/main/resources/bootstrap.properties`, where it will be loaded earlier than any other configuration.
 When we start for example **employee-service** Spring notices the presence of a **bootstrap** file, so it starts a parent **application context** with the content of the **bootstrap** file and asks the **config-service** after the configuration data for the application to start. It must provide an *application name* and the *active profile*. In this example,  it says: "Hello Config Server at http://localhost:8888, I need the configuration data to start the application  '*employee-service*' for the **active profile** '*dev*'."
 
 The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-**dev**.properties*' and it finds one, so it hands the file's content over. The **application context** requester starts now the **employee-service** with an *application context* based on the configuration data from the **config-service*.* 
@@ -161,11 +161,11 @@ HikariPool-1 - Start completed.
 ```
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MzAxNTc2LC0xODYwMDg0NDQxLDE2MD
-M3MzY5NjMsNDc1NDY5NDE5LDc0MDQ2NjE1NiwtMTM4MjI2NTUz
-MywtMTkzNjU3Njg5LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMzMTMxLD
-g5ODk2OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMxNDcsLTk2MjU5
-MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1MzYzLD
-E5MDM5MDgyODcsMTAwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMzQy
-NTM3ODFdfQ==
+eyJoaXN0b3J5IjpbLTEyODQ2ODY0OTUsLTE4NjAwODQ0NDEsMT
+YwMzczNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2LC0xMzgyMjY1
+NTMzLC0xOTM2NTc2ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMz
+EsODk4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYy
+NTkwMjkzLDE4ODczOTkzODMsNjc3NTc4NzU5LC0xODk2MjUzNj
+MsMTkwMzkwODI4NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMjEz
+NDI1Mzc4MV19
 -->
