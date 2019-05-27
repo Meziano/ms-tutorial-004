@@ -187,14 +187,14 @@ management.endpoints.web.exposure.include=*
 - to the `employee-service-dev.properties` under `src/main/resources/config` on the **config-service** 
 - to a new `application.properties` under `src/main/resources` on the **employee-service**.
 -  that we add  
-Now if w
+Now if we request 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA2NTAxNjc5LDEyMjI3ODMzNzcsLTYwOT
-M1NjY4MSwtMzQzNDA3Nzk2LDk1MDgxNTczMiwzOTE1NTA1NSwx
-NjQyNDMzMzgxLC0xODYwMDg0NDQxLDE2MDM3MzY5NjMsNDc1ND
-Y5NDE5LDc0MDQ2NjE1NiwtMTM4MjI2NTUzMywtMTkzNjU3Njg5
-LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMzMTMxLDg5ODk2OTE0OCwtMz
-c1NjU5NjgzLC05NDkxNjMxNDcsLTk2MjU5MDI5MywxODg3Mzk5
-MzgzXX0=
+eyJoaXN0b3J5IjpbMjAyOTMwNzEzMSwxMjIyNzgzMzc3LC02MD
+kzNTY2ODEsLTM0MzQwNzc5Niw5NTA4MTU3MzIsMzkxNTUwNTUs
+MTY0MjQzMzM4MSwtMTg2MDA4NDQ0MSwxNjAzNzM2OTYzLDQ3NT
+Q2OTQxOSw3NDA0NjYxNTYsLTEzODIyNjU1MzMsLTE5MzY1NzY4
+OSwtMTA0NDgwODc5NiwtMTU0OTQzMzEzMSw4OTg5NjkxNDgsLT
+M3NTY1OTY4MywtOTQ5MTYzMTQ3LC05NjI1OTAyOTMsMTg4NzM5
+OTM4M119
 -->
