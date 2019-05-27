@@ -131,11 +131,12 @@ When we start for example **employee-service** Spring notices the presence of a 
 
 The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-**dev**.properties*' and it finds one, so it hands the file's content over. The **application context** requester starts now the **employee-service** with an *application context* based on the configuration data from the **config-service*.* 
 (Note that we have until now used *.properties* files, but it's also possible and I find it better to use *.yml* file)
-Requesting http://localhost:8082/employees will sho
+Requesting http://localhost:8082/employees will show us the list of the employees:
+
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNDEyNjA0LDc0MDQ2NjE1NiwtMTM4Mj
+eyJoaXN0b3J5IjpbNDc1NDY5NDE5LDc0MDQ2NjE1NiwtMTM4Mj
 I2NTUzMywtMTkzNjU3Njg5LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMz
 MTMxLDg5ODk2OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMxNDcsLT
 k2MjU5MDI5MywxODg3Mzk5MzgzLDY3NzU3ODc1OSwtMTg5NjI1
