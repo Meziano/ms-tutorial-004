@@ -131,7 +131,6 @@ spring.application.name=employee-service
 spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ```
-Specify the client’s `spring.application.name` as `a-bootiful-client` and the location of the Config Server `spring.cloud.config.uri` in `configuration-client/src/main/resources/bootstrap.properties`, where it will be loaded earlier than any other configuration.
 When we start for example **employee-service** Spring notices the presence of a **bootstrap** file, so it starts a parent **application context** with the content of the **bootstrap** file and asks the **config-service** after the configuration data for the application to start. It must provide an *application name* and the *active profile*. In this example,  it says: "Hello Config Server at http://localhost:8888, I need the configuration data to start the application  '*employee-service*' for the **active profile** '*dev*'."
 
 The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-**dev**.properties*' and it finds one, so it hands the file's content over. The **application context** requester starts now the **employee-service** with an *application context* based on the configuration data from the **config-service*.* 
@@ -161,11 +160,11 @@ HikariPool-1 - Start completed.
 ```
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODQ2ODY0OTUsLTE4NjAwODQ0NDEsMT
-YwMzczNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2LC0xMzgyMjY1
-NTMzLC0xOTM2NTc2ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMz
-EsODk4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYy
-NTkwMjkzLDE4ODczOTkzODMsNjc3NTc4NzU5LC0xODk2MjUzNj
-MsMTkwMzkwODI4NywxMDA1ODUyNzYxLDIwMzA5NDI2NjgsMjEz
-NDI1Mzc4MV19
+eyJoaXN0b3J5IjpbMTY0MjQzMzM4MSwtMTg2MDA4NDQ0MSwxNj
+AzNzM2OTYzLDQ3NTQ2OTQxOSw3NDA0NjYxNTYsLTEzODIyNjU1
+MzMsLTE5MzY1NzY4OSwtMTA0NDgwODc5NiwtMTU0OTQzMzEzMS
+w4OTg5NjkxNDgsLTM3NTY1OTY4MywtOTQ5MTYzMTQ3LC05NjI1
+OTAyOTMsMTg4NzM5OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2My
+wxOTAzOTA4Mjg3LDEwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMTM0
+MjUzNzgxXX0=
 -->
