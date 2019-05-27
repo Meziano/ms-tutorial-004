@@ -119,7 +119,7 @@ To tell our microservices about the new situation we must make them aware about 
   <artifactId>spring-cloud-config-client</artifactId>
 </dependency>
 ```  
-It's also possible to use the starter (spring-cloud-starter-config) to configure an application as *config-client*.
+It's also possible to use the starter `spring-cloud-starter-config` to configure an application as *config-client*.
 ### Let our services know about the config-service
 To tell the **department-service** and **employee-service** about the **config-service** we have to add a *bootstrap.properties* file to both of them. 
 
@@ -215,11 +215,11 @@ spring.cloud.config.url=http://localhost:8888
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDgwOTA5MTMsNDExNDk0OTU3LDEyOD
-kyNzUwMjMsMTIyMjc4MzM3NywtNjA5MzU2NjgxLC0zNDM0MDc3
-OTYsOTUwODE1NzMyLDM5MTU1MDU1LDE2NDI0MzMzODEsLTE4Nj
-AwODQ0NDEsMTYwMzczNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2
-LC0xMzgyMjY1NTMzLC0xOTM2NTc2ODksLTEwNDQ4MDg3OTYsLT
-E1NDk0MzMxMzEsODk4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OTE2
-MzE0N119
+eyJoaXN0b3J5IjpbMTg0OTc2OTE2OCw0MTE0OTQ5NTcsMTI4OT
+I3NTAyMywxMjIyNzgzMzc3LC02MDkzNTY2ODEsLTM0MzQwNzc5
+Niw5NTA4MTU3MzIsMzkxNTUwNTUsMTY0MjQzMzM4MSwtMTg2MD
+A4NDQ0MSwxNjAzNzM2OTYzLDQ3NTQ2OTQxOSw3NDA0NjYxNTYs
+LTEzODIyNjU1MzMsLTE5MzY1NzY4OSwtMTA0NDgwODc5NiwtMT
+U0OTQzMzEzMSw4OTg5NjkxNDgsLTM3NTY1OTY4MywtOTQ5MTYz
+MTQ3XX0=
 -->
