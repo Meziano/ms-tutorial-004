@@ -180,16 +180,16 @@ public class EmployeeController {
 ```
 Please take note that a *getMessage()* method has been added to the `EmployeeController` to get the `message` from *config-service*. 
 
-We must also enable the `/refresh` endpoint by adding :
+We must also enable the `/refresh` endpoint by adding:
 ```
 management.endpoints.web.exposure.include=*
 ```
-- to the `employee-service-dev.properties` under `src/main/resources/config` on the **config-service** 
-- to a new `application.properties` under `src/main/resources` on the **employee-service**.
--  that we add  
-Now if we request http://localhost:8082/message we get:
+- either to the `employee-service-dev.properties` under `src/main/resources/config` on the **config-service** 
+- or to a new `application.properties` under `src/main/resources` on the **employee-service**.
+  
+If we request http://localhost:8082/message we get:
 
-![](images/employeeServiceMessage.png?raw=true)
+![message ](images/employeeServiceMessage.png?raw=true)
 
 Now if we:
 1. change the value of message in the *employee-service-dev.properties* file to
@@ -211,16 +211,17 @@ spring.application.name=department-service
 spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ``` 
-We can see that the communication is still working.
+We can see that the communication is still working by 
+!['Personnel' Department with its employees](images/employeesOfDepartment3.png?raw=true)
  
 ### Summary
 Our **department-service** and **employee-service** communicate as in the [last tuturial](https://github.com/Meziano/tutorial-003), but now they pull their respective configuration data  from the introduced **config-service** with an embedded **config server** that manages the configuration data in a file-system backend repository.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NjYxMzUyNyw0MTE0OTQ5NTcsMTI4OT
-I3NTAyMywxMjIyNzgzMzc3LC02MDkzNTY2ODEsLTM0MzQwNzc5
-Niw5NTA4MTU3MzIsMzkxNTUwNTUsMTY0MjQzMzM4MSwtMTg2MD
-A4NDQ0MSwxNjAzNzM2OTYzLDQ3NTQ2OTQxOSw3NDA0NjYxNTYs
-LTEzODIyNjU1MzMsLTE5MzY1NzY4OSwtMTA0NDgwODc5NiwtMT
-U0OTQzMzEzMSw4OTg5NjkxNDgsLTM3NTY1OTY4MywtOTQ5MTYz
-MTQ3XX0=
+eyJoaXN0b3J5IjpbMTk4MTE4MTgxNiwxNzY2ODgwOTQyLC0xMz
+IyOTc3MzQxLDEzNzgzMTExNywxMDc2NjEzNTI3LDQxMTQ5NDk1
+NywxMjg5Mjc1MDIzLDEyMjI3ODMzNzcsLTYwOTM1NjY4MSwtMz
+QzNDA3Nzk2LDk1MDgxNTczMiwzOTE1NTA1NSwxNjQyNDMzMzgx
+LC0xODYwMDg0NDQxLDE2MDM3MzY5NjMsNDc1NDY5NDE5LDc0MD
+Q2NjE1NiwtMTM4MjI2NTUzMywtMTkzNjU3Njg5LC0xMDQ0ODA4
+Nzk2XX0=
 -->
