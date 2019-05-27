@@ -178,20 +178,21 @@ public class EmployeeController {
   ...
 }
 ```
-Notice the getMessage() added to the `EmployeeController` to get the `message` from *config-service*. 
+Note the *getMessage()* added to the `EmployeeController` to get the `message` from *config-service*. 
 We must also enable the `/refresh` endpoint by adding :
 ```
 management.endpoints.web.exposure.include=*
 ```
 - to the `employee-service-dev.properties` under `src/main/resources/config` on the **config-service** 
-- to a new `application.properties` under `src/main/resources`that we add  
+- to a new `application.properties` under `src/main/resources` on the **employee-service**.
+-  that we add  
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMjc4MzM3NywtNjA5MzU2NjgxLC0zND
-M0MDc3OTYsOTUwODE1NzMyLDM5MTU1MDU1LDE2NDI0MzMzODEs
-LTE4NjAwODQ0NDEsMTYwMzczNjk2Myw0NzU0Njk0MTksNzQwND
-Y2MTU2LC0xMzgyMjY1NTMzLC0xOTM2NTc2ODksLTEwNDQ4MDg3
-OTYsLTE1NDk0MzMxMzEsODk4OTY5MTQ4LC0zNzU2NTk2ODMsLT
-k0OTE2MzE0NywtOTYyNTkwMjkzLDE4ODczOTkzODMsNjc3NTc4
-NzU5XX0=
+eyJoaXN0b3J5IjpbLTMyODU4NDY4LDEyMjI3ODMzNzcsLTYwOT
+M1NjY4MSwtMzQzNDA3Nzk2LDk1MDgxNTczMiwzOTE1NTA1NSwx
+NjQyNDMzMzgxLC0xODYwMDg0NDQxLDE2MDM3MzY5NjMsNDc1ND
+Y5NDE5LDc0MDQ2NjE1NiwtMTM4MjI2NTUzMywtMTkzNjU3Njg5
+LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMzMTMxLDg5ODk2OTE0OCwtMz
+c1NjU5NjgzLC05NDkxNjMxNDcsLTk2MjU5MDI5MywxODg3Mzk5
+MzgzXX0=
 -->
