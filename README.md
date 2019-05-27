@@ -202,7 +202,7 @@ curl -X POST -H 'Content-Type: application/json' -i http://localhost:8082/actuat
 ```
 and request http://localhost:8082/message again, we get the updated message:
 
-![](images/employeeServiceMessageLiveUpdate.png?raw=true)
+![live message update](images/employeeServiceMessageLiveUpdate.png?raw=true)
 
 ### Let the department-service and employee-service comunicate
 In a last step, let's start the **department-service** with `bootstrap.properties` as the sole configuration file:
@@ -216,7 +216,7 @@ We can see that the communication is still working.
 ### Summary
 Our **department-service** and **employee-service** communicate as in the [last tuturial](https://github.com/Meziano/tutorial-003), but now they pull their respective configuration data  from the introduced **config-service** with an embedded **config server** that manages the configuration data in a file-system backend repository.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNzQzOTM3Myw0MTE0OTQ5NTcsMTI4OT
+eyJoaXN0b3J5IjpbMTA3NjYxMzUyNyw0MTE0OTQ5NTcsMTI4OT
 I3NTAyMywxMjIyNzgzMzc3LC02MDkzNTY2ODEsLTM0MzQwNzc5
 Niw5NTA4MTU3MzIsMzkxNTUwNTUsMTY0MjQzMzM4MSwtMTg2MD
 A4NDQ0MSwxNjAzNzM2OTYzLDQ3NTQ2OTQxOSw3NDA0NjYxNTYs
