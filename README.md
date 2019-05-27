@@ -159,16 +159,15 @@ HikariPool-1 - Starting...
 HikariPool-1 - Start completed.
 ```
 The configuration properties are read once at the **employee-service**'s startup. To force the application to pull updated values from the *Config Server*, we just have to annotate the `MessageRestController` with the *Spring Cloud Config* `@RefreshScope` 
-We mualso want to enable the `/refresh` endpoint so that we can demonstrate dynamic configuration changes:
+We must also enable the `/refresh` endpoint by adding :
 
-`configuration-client/src/main/resources/application.properties`
-
-```java
+```
 management.endpoints.web.exposure.include=*
 ```
+to the 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MDE1NzY3MCw5NTA4MTU3MzIsMzkxNT
+eyJoaXN0b3J5IjpbLTM0MzQwNzc5Niw5NTA4MTU3MzIsMzkxNT
 UwNTUsMTY0MjQzMzM4MSwtMTg2MDA4NDQ0MSwxNjAzNzM2OTYz
 LDQ3NTQ2OTQxOSw3NDA0NjYxNTYsLTEzODIyNjU1MzMsLTE5Mz
 Y1NzY4OSwtMTA0NDgwODc5NiwtMTU0OTQzMzEzMSw4OTg5Njkx
