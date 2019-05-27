@@ -135,7 +135,7 @@ The **config-service** checks in the repository it manages if there is a configu
 Requesting http://localhost:8082/employees will show us the list of the employees:
 
 ![find all employees using configuration data from config-service](images/findEmployeesByDepartmentIdUsingJavaClasses.png?raw=true)
-It's important to get a look at the console:
+It's important to have a look at the console:
 ```
 Fetching config from server at : http://localhost:8888
 Located environment: name=employee-service, profiles=[dev], label=null, version=null, state=null
@@ -157,11 +157,11 @@ HikariPool-1 - Start completed.
 Th
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzI5MzM5LDE2MDM3MzY5NjMsNDc1ND
-Y5NDE5LDc0MDQ2NjE1NiwtMTM4MjI2NTUzMywtMTkzNjU3Njg5
-LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMzMTMxLDg5ODk2OTE0OCwtMz
-c1NjU5NjgzLC05NDkxNjMxNDcsLTk2MjU5MDI5MywxODg3Mzk5
-MzgzLDY3NzU3ODc1OSwtMTg5NjI1MzYzLDE5MDM5MDgyODcsMT
-AwNTg1Mjc2MSwyMDMwOTQyNjY4LDIxMzQyNTM3ODEsMjA3Mjc4
-NTIzM119
+eyJoaXN0b3J5IjpbMTQzNzU3Mzk2NSwxNjAzNzM2OTYzLDQ3NT
+Q2OTQxOSw3NDA0NjYxNTYsLTEzODIyNjU1MzMsLTE5MzY1NzY4
+OSwtMTA0NDgwODc5NiwtMTU0OTQzMzEzMSw4OTg5NjkxNDgsLT
+M3NTY1OTY4MywtOTQ5MTYzMTQ3LC05NjI1OTAyOTMsMTg4NzM5
+OTM4Myw2Nzc1Nzg3NTksLTE4OTYyNTM2MywxOTAzOTA4Mjg3LD
+EwMDU4NTI3NjEsMjAzMDk0MjY2OCwyMTM0MjUzNzgxLDIwNzI3
+ODUyMzNdfQ==
 -->
