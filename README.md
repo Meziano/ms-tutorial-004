@@ -212,16 +212,16 @@ spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ``` 
 We can see that the communication is still working by 
-!['relations éxterieures' Department's employees](images/employeesOfDepartment3.png?raw=true)
+!['Personnel' Department with its employees](images/employeesOfDepartment3.png?raw=true)
  
 ### Summary
 Our **department-service** and **employee-service** communicate as in the [last tuturial](https://github.com/Meziano/tutorial-003), but now they pull their respective configuration data  from the introduced **config-service** with an embedded **config server** that manages the configuration data in a file-system backend repository.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2Njg4MDk0MiwtMTMyMjk3NzM0MSwxMz
-c4MzExMTcsMTA3NjYxMzUyNyw0MTE0OTQ5NTcsMTI4OTI3NTAy
-MywxMjIyNzgzMzc3LC02MDkzNTY2ODEsLTM0MzQwNzc5Niw5NT
-A4MTU3MzIsMzkxNTUwNTUsMTY0MjQzMzM4MSwtMTg2MDA4NDQ0
-MSwxNjAzNzM2OTYzLDQ3NTQ2OTQxOSw3NDA0NjYxNTYsLTEzOD
-IyNjU1MzMsLTE5MzY1NzY4OSwtMTA0NDgwODc5NiwtMTU0OTQz
-MzEzMV19
+eyJoaXN0b3J5IjpbMTk4MTE4MTgxNiwxNzY2ODgwOTQyLC0xMz
+IyOTc3MzQxLDEzNzgzMTExNywxMDc2NjEzNTI3LDQxMTQ5NDk1
+NywxMjg5Mjc1MDIzLDEyMjI3ODMzNzcsLTYwOTM1NjY4MSwtMz
+QzNDA3Nzk2LDk1MDgxNTczMiwzOTE1NTA1NSwxNjQyNDMzMzgx
+LC0xODYwMDg0NDQxLDE2MDM3MzY5NjMsNDc1NDY5NDE5LDc0MD
+Q2NjE1NiwtMTM4MjI2NTUzMywtMTkzNjU3Njg5LC0xMDQ0ODA4
+Nzk2XX0=
 -->
