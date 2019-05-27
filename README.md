@@ -127,6 +127,7 @@ spring.application.name=employee-service
 spring.profiles.active=dev
 spring.cloud.config.url=http://localhost:8888
 ```
+The properties to configure the Config Client must necessarily be read in _before_ the rest of the application’s configuration is read from the Config Server, during the _bootstrap_ phase. Specify the client’s `spring.application.name` as `a-bootiful-client` and the location of the Config Server `spring.cloud.config.uri` in `configuration-client/src/main/resources/bootstrap.properties`, where it will be loaded earlier than any other configuration.
 When we start for example **employee-service** Spring notices the presence of a **bootstrap** file, so it starts a parent **application context** with the content of the **bootstrap** file and asks the **config-service** after the configuration data for the application to start. It must provide an *application name* and the *active profile*. In this example,  it says: "Hello Config Server at http://localhost:8888, I need the configuration data to start the application  '*employee-service*' for the **active profile** '*dev*'."
 
 The **config-service** checks in the repository it manages if there is a configuration file with the name '*employee-service-**dev**.properties*' and it finds one, so it hands the file's content over. The **application context** requester starts now the **employee-service** with an *application context* based on the configuration data from the **config-service*.* 
@@ -156,7 +157,7 @@ HikariPool-1 - Start completed.
 ```
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MDc4MjMxOCwtMTg2MDA4NDQ0MSwxNj
+eyJoaXN0b3J5IjpbLTIzNzAzMTE3MywtMTg2MDA4NDQ0MSwxNj
 AzNzM2OTYzLDQ3NTQ2OTQxOSw3NDA0NjYxNTYsLTEzODIyNjU1
 MzMsLTE5MzY1NzY4OSwtMTA0NDgwODc5NiwtMTU0OTQzMzEzMS
 w4OTg5NjkxNDgsLTM3NTY1OTY4MywtOTQ5MTYzMTQ3LC05NjI1
