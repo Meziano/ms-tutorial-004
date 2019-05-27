@@ -100,7 +100,7 @@ message: Hello microservices world!
 
  ![Config Data from local repository for employee-service for dev profile after refresh](images/LiveRefreshOfConfigDataForEmployeeserviceDev.png?raw=true)
  
- To summurize here is a quotation from [Spring Cloud Config](https://cloud.spring.io/spring-cloud-config/multi/multi__spring_cloud_config_client.html):
+ To summarize here is a quotation from [Spring Cloud Config](https://cloud.spring.io/spring-cloud-config/multi/multi__spring_cloud_config_client.html):
  > The Config Service serves property sources from `/{name}/{profile}/{label}`, where the default bindings in the client app are as follows:
 >
 >-   "name" = `${spring.application.name}`
@@ -190,7 +190,7 @@ management.endpoints.web.exposure.include=*
 Now if we request 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyOTMwNzEzMSwxMjIyNzgzMzc3LC02MD
+eyJoaXN0b3J5IjpbMTI4OTI3NTAyMywxMjIyNzgzMzc3LC02MD
 kzNTY2ODEsLTM0MzQwNzc5Niw5NTA4MTU3MzIsMzkxNTUwNTUs
 MTY0MjQzMzM4MSwtMTg2MDA4NDQ0MSwxNjAzNzM2OTYzLDQ3NT
 Q2OTQxOSw3NDA0NjYxNTYsLTEzODIyNjU1MzMsLTE5MzY1NzY4
