@@ -196,19 +196,19 @@ Now if we:
 ```
 message=Bonjour Monde des microservices! 
 ```
-and send a POST actuator/refresh with an empty JSON-object and 'Content-Type: application/json' in the header:
+2. send a POST actuator/refresh with an empty JSON-object and 'Content-Type: application/json' in the header:
 ```
 curl -X POST -H 'Content-Type: application/json' -i http://localhost:8082/actuator/refresh --data '{}'
 ```
-and 
+and request http://localhost:8082/message again  
 
 ### Summary
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjk5MDI2NCwxMjg5Mjc1MDIzLDEyMj
-I3ODMzNzcsLTYwOTM1NjY4MSwtMzQzNDA3Nzk2LDk1MDgxNTcz
-MiwzOTE1NTA1NSwxNjQyNDMzMzgxLC0xODYwMDg0NDQxLDE2MD
-M3MzY5NjMsNDc1NDY5NDE5LDc0MDQ2NjE1NiwtMTM4MjI2NTUz
-MywtMTkzNjU3Njg5LC0xMDQ0ODA4Nzk2LC0xNTQ5NDMzMTMxLD
-g5ODk2OTE0OCwtMzc1NjU5NjgzLC05NDkxNjMxNDcsLTk2MjU5
-MDI5M119
+eyJoaXN0b3J5IjpbNDExNDk0OTU3LDEyODkyNzUwMjMsMTIyMj
+c4MzM3NywtNjA5MzU2NjgxLC0zNDM0MDc3OTYsOTUwODE1NzMy
+LDM5MTU1MDU1LDE2NDI0MzMzODEsLTE4NjAwODQ0NDEsMTYwMz
+czNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2LC0xMzgyMjY1NTMz
+LC0xOTM2NTc2ODksLTEwNDQ4MDg3OTYsLTE1NDk0MzMxMzEsOD
+k4OTY5MTQ4LC0zNzU2NTk2ODMsLTk0OTE2MzE0NywtOTYyNTkw
+MjkzXX0=
 -->
