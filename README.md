@@ -1,7 +1,7 @@
 # Microservices Tutorial-004
 # Let our microservices be independents
 ## Introduction
-In the [last tuturial](https://github.com/Meziano/ms-tutorial-003) we have hardcoded the URL of the **employee-service** in the **department-service** and this is not very wise: What if the used port changes? What if we have 10 or more microservices that need to communicate with each other and that must have at least differents server-port on different environments like development, test and production?
+In the [last tutorial](https://github.com/Meziano/ms-tutorial-003) we have hardcoded the URL of the **employee-service** in the **department-service** and this is not very wise: What if the used port changes? What if we have 10 or more microservices that need to communicate with each other and that must have at least differents server-port on different environments like development, test and production?
 It's abvious that it makes no sense it make sense to have to manually update each and every one of these services. 
 The idea is to keep the configuration in a centralized and easy to access place, so that each microservice can load its own configuration and refresh it automatically to reflect any changes without restarting the JVM.
 > A Spring Cloud Server provides server and client-side support for externalized configuration in a distributed system. With the Config Server you have a central
@@ -220,11 +220,11 @@ We can see that the communication is still working by requisting http://localhos
 ### Summary
 Our **department-service** and **employee-service** communicate as in the [last tuturial](https://github.com/Meziano/ms-tutorial-003), but now they pull their respective configuration data  from the introduced **config-service** with an embedded **config server** that manages the configuration data in a file-system backend repository.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzI1MjE5OTMsLTIwNDk0NDE3NDAsMT
-c2Njg4MDk0MiwtMTMyMjk3NzM0MSwxMzc4MzExMTcsMTA3NjYx
-MzUyNyw0MTE0OTQ5NTcsMTI4OTI3NTAyMywxMjIyNzgzMzc3LC
-02MDkzNTY2ODEsLTM0MzQwNzc5Niw5NTA4MTU3MzIsMzkxNTUw
-NTUsMTY0MjQzMzM4MSwtMTg2MDA4NDQ0MSwxNjAzNzM2OTYzLD
-Q3NTQ2OTQxOSw3NDA0NjYxNTYsLTEzODIyNjU1MzMsLTE5MzY1
-NzY4OV19
+eyJoaXN0b3J5IjpbNDM2MDUwODc3LC0xNjcyNTIxOTkzLC0yMD
+Q5NDQxNzQwLDE3NjY4ODA5NDIsLTEzMjI5NzczNDEsMTM3ODMx
+MTE3LDEwNzY2MTM1MjcsNDExNDk0OTU3LDEyODkyNzUwMjMsMT
+IyMjc4MzM3NywtNjA5MzU2NjgxLC0zNDM0MDc3OTYsOTUwODE1
+NzMyLDM5MTU1MDU1LDE2NDI0MzMzODEsLTE4NjAwODQ0NDEsMT
+YwMzczNjk2Myw0NzU0Njk0MTksNzQwNDY2MTU2LC0xMzgyMjY1
+NTMzXX0=
 -->
