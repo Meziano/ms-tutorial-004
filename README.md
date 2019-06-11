@@ -70,6 +70,7 @@ Furthermore we add the following configurationfiles:
 + department-service-prod.properties
 + employee-service-dev.properties
 + employee-service-prod.properties
+
 For now these files containt just the port number for the related microservice:
 ```
 # department-service-dev.properties
@@ -221,11 +222,11 @@ We can see that the communication is still working by requisting http://localhos
 ### Summary
 Our **department-service** and **employee-service** communicate as in the [last tuturial](https://github.com/Meziano/ms-tutorial-003), but now they pull their respective configuration data  from the introduced **config-service** with an embedded **config server** that manages the configuration data in a file-system backend repository.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjc5NzM0MDMsNDM2MDUwODc3LC0xNj
-cyNTIxOTkzLC0yMDQ5NDQxNzQwLDE3NjY4ODA5NDIsLTEzMjI5
-NzczNDEsMTM3ODMxMTE3LDEwNzY2MTM1MjcsNDExNDk0OTU3LD
-EyODkyNzUwMjMsMTIyMjc4MzM3NywtNjA5MzU2NjgxLC0zNDM0
-MDc3OTYsOTUwODE1NzMyLDM5MTU1MDU1LDE2NDI0MzMzODEsLT
-E4NjAwODQ0NDEsMTYwMzczNjk2Myw0NzU0Njk0MTksNzQwNDY2
-MTU2XX0=
+eyJoaXN0b3J5IjpbNzk4MTM0MzU1LC0xODI3OTczNDAzLDQzNj
+A1MDg3NywtMTY3MjUyMTk5MywtMjA0OTQ0MTc0MCwxNzY2ODgw
+OTQyLC0xMzIyOTc3MzQxLDEzNzgzMTExNywxMDc2NjEzNTI3LD
+QxMTQ5NDk1NywxMjg5Mjc1MDIzLDEyMjI3ODMzNzcsLTYwOTM1
+NjY4MSwtMzQzNDA3Nzk2LDk1MDgxNTczMiwzOTE1NTA1NSwxNj
+QyNDMzMzgxLC0xODYwMDg0NDQxLDE2MDM3MzY5NjMsNDc1NDY5
+NDE5XX0=
 -->
